@@ -1,0 +1,100 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2376,         90]
+NotebookOptionsPosition[      1972,         72]
+NotebookOutlinePosition[      2331,         88]
+CellTagsIndexPosition[      2288,         85]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"file4", "=", 
+    RowBox[{
+    "<<", "\"\</Users/ruppell/Math/temp/output-cpx-higgs-phase2.txt\>\""}]}], 
+   ";"}], " "}], "\n", 
+ RowBox[{
+  RowBox[{"label4", "=", "\"\<Fig Snu LSP CPV\>\""}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"bsgamma", "=", 
+   RowBox[{"<<", "\"\</Users/ruppell/Math/temp/data.txt\>\""}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.546161259625638*^9, 3.546161268588057*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Do", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"file4", "[", 
+     RowBox[{"[", 
+      RowBox[{"i", ",", "9"}], "]"}], "]"}], "=", 
+    RowBox[{"bsgamma", "[", 
+     RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "3200"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.546161852245194*^9, 3.546161902662871*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"file4", "=", 
+   RowBox[{"(", 
+    RowBox[{"pos1", "@", 
+     RowBox[{"pos2", "@", 
+      RowBox[{"pos3", "@", 
+       RowBox[{"pos4", "@", 
+        RowBox[{"pos5", "@", 
+         RowBox[{"posH", "@", 
+          RowBox[{"posS", "@", 
+           RowBox[{"posB", "@", "file4"}]}]}]}]}]}]}]}], ")"}]}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "file4", ">>", 
+   "\"\</Users/ruppell/Math/temp/output-cpx-higgs-phase-edm_clean3.txt\>\""}],
+   ";"}]], "Input",
+ CellChangeTimes->{{3.54616200259162*^9, 3.54616200266352*^9}}]
+},
+WindowSize->{740, 756},
+WindowMargins->{{119, Automatic}, {156, Automatic}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 259, 8, 43, "Input"],
+Cell[819, 30, 202, 5, 27, "Input"],
+Cell[1024, 37, 369, 11, 27, "Input"],
+Cell[1396, 50, 354, 12, 27, "Input"],
+Cell[1753, 64, 215, 6, 27, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

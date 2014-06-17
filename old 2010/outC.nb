@@ -1,0 +1,450 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     15275,        441]
+NotebookOptionsPosition[     14701,        420]
+NotebookOutlinePosition[     15042,        435]
+CellTagsIndexPosition[     14999,        432]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LH1M", "=", 
+   RowBox[{"Simplify", "[", "Higgs1Mod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LH2M", "=", 
+   RowBox[{"Simplify", "[", "Higgs2Mod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LH2P", "=", 
+   RowBox[{"Simplify", "[", "Higgs2Phase", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LSM", "=", 
+   RowBox[{"Simplify", "[", "SingletMod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LSP", "=", 
+   RowBox[{"Simplify", "[", "SingletPhase", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LL1M", "=", 
+   RowBox[{"Simplify", "[", "Left1Mod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LL2M", "=", 
+   RowBox[{"Simplify", "[", "Left2Mod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LL3M", "=", 
+   RowBox[{"Simplify", "[", "Left3Mod", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LR3M", "=", 
+   RowBox[{"Simplify", "[", "Right3Mod", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.4988932406592083`*^9, 3.498893271340186*^9}, {
+  3.498893312069392*^9, 3.49889332288995*^9}, {3.498893394780995*^9, 
+  3.4988933981251297`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetAttributes", "[", 
+   RowBox[{"SimplifyMatrix", ",", "HoldRest"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"SimplifyMatrix", "[", 
+    RowBox[{"mat_", ",", "out_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i", ",", "j", ",", "imax", ",", "jmax"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Clear", "[", "out", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"imax", "=", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "mat", "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"jmax", "=", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "mat", "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"out", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{"Null", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "imax"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "1", ",", "jmax"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"For", "[", 
+       RowBox[{
+        RowBox[{"i", "=", "0"}], ",", 
+        RowBox[{"i", "<", "imax"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"i", "++"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"For", "[", 
+          RowBox[{
+           RowBox[{"j", "=", "0"}], ",", 
+           RowBox[{"j", "<", "jmax"}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"j", "++"}], ";", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Dimensions", "[", 
+                RowBox[{"mat", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"i", ",", "j"}], "]"}], "]"}], "]"}], "\[Equal]", 
+               RowBox[{"{", "3", "}"}]}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"out", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"i", ",", "j"}], "]"}], "]"}], "=", 
+                RowBox[{
+                 RowBox[{"Head", "[", 
+                  RowBox[{"mat", "[", 
+                   RowBox[{"[", 
+                    RowBox[{"i", ",", "j"}], "]"}], "]"}], "]"}], "[", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"mat", "[", 
+                   RowBox[{"[", 
+                    RowBox[{"i", ",", "j", ",", "1"}], "]"}], "]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"mat", "[", 
+                   RowBox[{"[", 
+                    RowBox[{"i", ",", "j", ",", "2"}], "]"}], "]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"Map", "[", 
+                   RowBox[{"Simplify", ",", 
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"i", ",", "j", ",", "3"}], "]"}], "]"}]}], " ", 
+                   "]"}]}], "]"}]}], ";"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"out", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"i", ",", "j"}], "]"}], "]"}], "=", 
+                RowBox[{"mat", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"i", ",", "j"}], "]"}], "]"}]}], ";"}]}], 
+             "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+          "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.498893785887291*^9, 3.49889380172445*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SimplifyMatrix", "[", 
+   RowBox[{
+    RowBox[{"Mneut", "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"phi2", "\[Rule]", "0"}], ",", 
+       RowBox[{"phiS", "\[Rule]", "0"}]}], "}"}]}], ",", "MNET"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.498894239924204*^9, 3.4988942525300407`*^9}, 
+   3.49950373569741*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SimplifyMatrix", "[", 
+   RowBox[{
+    RowBox[{"Mne1l", "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"phi2", "\[Rule]", "0"}], ",", 
+       RowBox[{"phiS", "\[Rule]", "0"}]}], "}"}]}], ",", "MNEL"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.498894239924204*^9, 3.4988942525300407`*^9}, 
+   3.499503737688443*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SimplifyMatrix", "[", 
+   RowBox[{"Mchar", ",", "MCHT"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"SimplifyMatrix", "[", 
+   RowBox[{"Mch1l", ",", "MCHL"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.498894239924204*^9, 3.498894246978135*^9}, 
+   3.499503754934351*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LN6", "=", 
+   RowBox[{"(", 
+    RowBox[{"MNET", "+", "MNEL"}], ")"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LC2", "=", 
+   RowBox[{"(", 
+    RowBox[{"MCHT", "+", "MCHL"}], ")"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"MslN", "=", 
+   RowBox[{"Simplify", "@", "MslepN"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MslC", "=", 
+   RowBox[{"Simplify", "@", "MslepC"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mc\[Chi]", "=", 
+   RowBox[{"Simplify", "@", "Mch\[Chi]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mn\[Chi]", "=", 
+   RowBox[{"Simplify", "@", "Mne\[Chi]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"M\[Nu]", "=", 
+   RowBox[{"Simplify", "@", "Mneutrino"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Ml", "=", 
+   RowBox[{"Simplify", "@", "Mlepton"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.4988932406592083`*^9, 3.498893271340186*^9}, {
+  3.498893312069392*^9, 3.498893452451749*^9}, {3.4988934965101633`*^9, 
+  3.4988935381017447`*^9}, {3.498893751610194*^9, 3.4988937599914093`*^9}, {
+  3.4988938510841846`*^9, 3.498893852768964*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"OutPut", "[", 
+    RowBox[{"mat_", ",", "name_", ",", "file_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i", ",", "j", ",", "imax", ",", "jmax", ",", "out"}], "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"out", "=", 
+       RowBox[{"OpenWrite", "[", "file", "]"}]}], ";", "\[IndentingNewLine]", 
+      
+      RowBox[{"imax", "=", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "mat", "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"jmax", "=", 
+       RowBox[{
+        RowBox[{"Dimensions", "[", "mat", "]"}], "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"For", "[", 
+       RowBox[{
+        RowBox[{"i", "=", "0"}], ",", 
+        RowBox[{"i", "<", "imax"}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"i", "++"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"For", "[", 
+          RowBox[{
+           RowBox[{"j", "=", "0"}], ",", 
+           RowBox[{"j", "<", "jmax"}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"j", "++"}], ";", "\[IndentingNewLine]", 
+            RowBox[{"Write", "[", 
+             RowBox[{"out", ",", "\[IndentingNewLine]", 
+              RowBox[{"OutputForm", "[", 
+               RowBox[{"\"\<MX\>\"", "<>", 
+                RowBox[{"ToString", "[", "i", "]"}], "<>", 
+                RowBox[{"ToString", "[", "j", "]"}], "<>", "\"\< = <* \>\"", "<>", 
+                RowBox[{"ToString", "[", "name", "]"}], "<>", "\"\<[[\>\"", "<>", 
+                RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<,\>\"", "<>", 
+                
+                RowBox[{"ToString", "[", "j", "]"}], "<>", "\"\<]] *>\>\""}], 
+               "]"}]}], "\[IndentingNewLine]", 
+             StyleBox["]", "Input"]}], 
+            StyleBox[";", "Input"]}]}], "\[IndentingNewLine]", "]"}], ";"}]}],
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Close", "[", "file", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Splice", "[", "file", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"DeleteFile", "[", "file", "]"}], ";"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.498893919336097*^9, 3.4988939409082527`*^9}, {
+  3.498895008777505*^9, 3.498895008983979*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"LN6", ",", 
+    RowBox[{"HoldForm", "[", "LN6", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/ScalarsN.mc\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"LC2", ",", 
+    RowBox[{"HoldForm", "[", "LC2", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/ScalarsC.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"MslN", ",", 
+    RowBox[{"HoldForm", "[", "MslN", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/SleptonN.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"MslC", ",", 
+    RowBox[{"HoldForm", "[", "MslC", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/SleptonC.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"Mn\[Chi]", ",", 
+    RowBox[{"HoldForm", "[", "Mn\[Chi]", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/Neutralino.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"Mc\[Chi]", ",", 
+    RowBox[{"HoldForm", "[", "Mc\[Chi]", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/Chargino.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"M\[Nu]", ",", 
+    RowBox[{"HoldForm", "[", "M\[Nu]", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/LeptonN.mc\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OutPut", "[", 
+   RowBox[{"Ml", ",", 
+    RowBox[{"HoldForm", "[", "Ml", "]"}], ",", 
+    "\"\</Users/ruppell/Math/temp/LeptonC.mc\>\""}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.49889396628433*^9, 3.498893975639804*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rr", "=", 
+   RowBox[{
+    RowBox[{"Solve", 
+     StyleBox["[", "Code"], 
+     RowBox[{
+      RowBox[{
+       StyleBox[
+        RowBox[{
+         StyleBox["L", "Code"], "H2P"}]], "\[Equal]", "0"}], ",", "Alambda"}],
+      "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"ss", "=", 
+   RowBox[{
+    RowBox[{"Solve", 
+     StyleBox["[", "Code"], 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        StyleBox["(", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{
+           StyleBox["L", "Code"], "SP"}]], "/.", "rr"}], ")"}], "\[Equal]", 
+       "0"}], ",", "Akappa"}], 
+     StyleBox["]", "Input"]}], 
+    StyleBox["[", "Input"], 
+    RowBox[{
+     StyleBox["[", "Input"], 
+     StyleBox["1", "Code"], 
+     StyleBox["]", "Code"]}], 
+    StyleBox["]", "Code"]}]}], 
+  StyleBox[";", "Code"]}], "\n", 
+ RowBox[{
+  RowBox[{"tt", "=", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"LH1M", "\[Equal]", "0"}], ",", "mH1"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"uu", "=", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"LH2M", "\[Equal]", "0"}], ",", "mH2"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vv", "=", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"LSM", "\[Equal]", "0"}], ",", "MS"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+  "file", " ", "=", " ", "\"\</Users/ruppell/Math/temp/Constraints.mc\>\""}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"out", "=", 
+   RowBox[{"OpenWrite", "[", "file", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Write", "[", 
+   RowBox[{"out", ",", 
+    RowBox[{
+    "OutputForm", "[", "\"\< Alambda =  <*  Alambda/.rr//Simplify *>\>\"", 
+     "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Write", "[", 
+   RowBox[{"out", ",", 
+    RowBox[{
+    "OutputForm", "[", "\"\< Akappa =  <*  Akappa/.ss//Simplify *>\>\"", 
+     "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Write", "[", 
+   RowBox[{"out", ",", 
+    RowBox[{
+    "OutputForm", "[", "\"\< mH1 = <* mH1/.tt//Simplify *>\>\"", "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Write", "[", 
+   RowBox[{"out", ",", 
+    RowBox[{
+    "OutputForm", "[", "\"\< mH2 = <* mH2/.uu//Simplify *>\>\"", "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Write", "[", 
+   RowBox[{"out", ",", 
+    RowBox[{
+    "OutputForm", "[", "\"\< MS =  <*  MS/.vv//Simplify *>\>\"", "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Close", "[", "file", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Splice", "[", 
+   RowBox[{"file", ",", 
+    RowBox[{"PageWidth", "\[Rule]", "Infinity"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DeleteFile", "[", "file", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.49889418350699*^9, 3.498894183624885*^9}, {
+  3.4988943461082907`*^9, 3.498894357922742*^9}}]
+},
+WindowSize->{640, 750},
+WindowMargins->{{Automatic, 328}, {Automatic, 69}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 1068, 30, 148, "Input"],
+Cell[1616, 52, 3646, 89, 313, "Input"],
+Cell[5265, 143, 365, 11, 27, "Input"],
+Cell[5633, 156, 366, 11, 27, "Input"],
+Cell[6002, 169, 310, 8, 43, "Input"],
+Cell[6315, 179, 1146, 30, 133, "Input"],
+Cell[7464, 211, 2413, 53, 298, "Input"],
+Cell[9880, 266, 1703, 47, 133, "Input"],
+Cell[11586, 315, 3111, 103, 238, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

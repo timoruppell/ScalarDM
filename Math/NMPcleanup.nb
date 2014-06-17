@@ -1,0 +1,173 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6194,        163]
+NotebookOptionsPosition[      5751,        144]
+NotebookOutlinePosition[      6106,        160]
+CellTagsIndexPosition[      6063,        157]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Clean up the NMP5 and NMP9 benchmarks", "Text",
+ CellChangeTimes->{{3.5421188681162252`*^9, 3.542118883102824*^9}, 
+   3.543202192617968*^9},
+ FontSize->18],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "NMP5", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"file5c", "=", 
+     RowBox[{"<<", "\"\</Users/ruppell/Math/temp/NMP5_cpc.txt\>\""}]}], ";"}],
+    "\n", 
+   RowBox[{
+    RowBox[{"label5c", "=", "\"\<NMP5 CPC\>\""}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"file5v", "=", 
+     RowBox[{"<<", "\"\</Users/ruppell/Math/temp/NMP5_cpv.txt\>\""}]}], ";"}],
+    " ", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"label5v", "=", "\"\<NMP5 CPV\>\""}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.530349712903961*^9, 3.5303497399053383`*^9}, 
+   3.530349959271459*^9, {3.5304190599031067`*^9, 3.530419070795442*^9}, {
+   3.5304192431511393`*^9, 3.530419248133665*^9}, {3.530434938510022*^9, 
+   3.530434943931733*^9}, {3.530440145550338*^9, 3.53044014727561*^9}, {
+   3.53045982625807*^9, 3.5304598318493347`*^9}, {3.530462257977758*^9, 
+   3.5304622840387383`*^9}, 3.530462488958239*^9, {3.530506184960807*^9, 
+   3.530506188755343*^9}, {3.5322501217750177`*^9, 3.5322501311536493`*^9}, 
+   3.5323406029486303`*^9, {3.532416069870488*^9, 3.532416074619686*^9}, {
+   3.5329381111254272`*^9, 3.532938128086043*^9}, 3.532938189751503*^9, 
+   3.535356010883954*^9, {3.5406262729172993`*^9, 3.540626289781227*^9}, {
+   3.54062637707274*^9, 3.540626387533777*^9}, {3.540626436604074*^9, 
+   3.540626462034912*^9}, {3.540626543376172*^9, 3.540626561006768*^9}, {
+   3.5406272917938643`*^9, 3.540627292953537*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "NMP9", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"file9c", "=", 
+     RowBox[{"<<", "\"\</Users/ruppell/Math/temp/NMP9_cpc.txt\>\""}]}], ";"}],
+    "\n", 
+   RowBox[{
+    RowBox[{"label9c", "=", "\"\<NMP9 CPC\>\""}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"file9v", "=", 
+     RowBox[{"<<", "\"\</Users/ruppell/Math/temp/NMP9_cpv.txt\>\""}]}], ";"}],
+    " ", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"label9v", "=", "\"\<NMP9 CPV\>\""}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.530349712903961*^9, 3.5303497399053383`*^9}, 
+   3.530349959271459*^9, {3.5304190599031067`*^9, 3.530419070795442*^9}, {
+   3.5304192431511393`*^9, 3.530419248133665*^9}, {3.530434938510022*^9, 
+   3.530434943931733*^9}, {3.530440145550338*^9, 3.53044014727561*^9}, {
+   3.53045982625807*^9, 3.5304598318493347`*^9}, {3.530462257977758*^9, 
+   3.5304622840387383`*^9}, 3.530462488958239*^9, {3.530506184960807*^9, 
+   3.530506188755343*^9}, {3.5322501217750177`*^9, 3.5322501311536493`*^9}, 
+   3.5323406029486303`*^9, {3.532416069870488*^9, 3.532416074619686*^9}, {
+   3.5329381111254272`*^9, 3.532938128086043*^9}, 3.532938189751503*^9, 
+   3.535356010883954*^9, {3.5406262729172993`*^9, 3.540626289781227*^9}, {
+   3.54062637707274*^9, 3.540626387533777*^9}, {3.540626436604074*^9, 
+   3.540626462034912*^9}, {3.540626543376172*^9, 3.540626561006768*^9}, {
+   3.540626592680876*^9, 3.540626605255001*^9}, {3.540627300482134*^9, 
+   3.540627301593584*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"pos", "[", "name_", "]"}], "=", 
+   RowBox[{"Select", "[", 
+    RowBox[{"name", ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "3", ",", "2"}], "]"}], "]"}], "<", "1000"}], 
+       ")"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.542118397041338*^9, 3.542118411688806*^9}, {
+  3.542118442826866*^9, 3.5421184773861933`*^9}, {3.5421187771753197`*^9, 
+  3.542118783624302*^9}, {3.543825327487105*^9, 3.543825383261907*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"file5v", "=", 
+   RowBox[{"pos", "@", "file5v"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"file5c", "=", 
+   RowBox[{"pos", "@", "file5c"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"file9v", "=", 
+   RowBox[{"pos", "@", "file9v"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"file9c", "=", 
+   RowBox[{"pos", "@", "file9c"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5421184831019793`*^9, 3.542118483687702*^9}, {
+   3.542118542681603*^9, 3.542118646963831*^9}, {3.542118726784189*^9, 
+   3.5421187483331747`*^9}, 3.542118816984036*^9, {3.542118939016169*^9, 
+   3.542118967723302*^9}, {3.5421190337004213`*^9, 3.5421190404203053`*^9}, {
+   3.543825396177457*^9, 3.543825424950725*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Save", "[", 
+   RowBox[{
+   "\"\</Users/ruppell/Math/temp/NMP5_cpv_clean.txt\>\"", ",", "file5v"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Save", "[", 
+   RowBox[{
+   "\"\</Users/ruppell/Math/temp/NMP5_cpc_clean.txt\>\"", ",", "file5c"}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Save", "[", 
+   RowBox[{
+   "\"\</Users/ruppell/Math/temp/NMP9_cpv_clean.txt\>\"", ",", "file9v"}], 
+   "]"}], ";", 
+  RowBox[{"Save", "[", 
+   RowBox[{
+   "\"\</Users/ruppell/Math/temp/NMP9_cpc_clean.txt\>\"", ",", "file9c"}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5421189857469387`*^9, 3.5421190544283047`*^9}}]
+},
+WindowSize->{740, 867},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 162, 3, 32, "Text"],
+Cell[722, 25, 1474, 28, 88, "Input"],
+Cell[2199, 55, 1522, 29, 88, "Input"],
+Cell[3724, 86, 570, 15, 27, "Input"],
+Cell[4297, 103, 759, 17, 73, "Input"],
+Cell[5059, 122, 688, 20, 73, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

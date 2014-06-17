@@ -1,0 +1,2496 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[    119968,       2486]
+NotebookOptionsPosition[    119635,       2469]
+NotebookOutlinePosition[    119993,       2485]
+CellTagsIndexPosition[    119950,       2482]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Partition", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Framed", "[", 
+        RowBox[{
+         RowBox[{"Show", "[", 
+          RowBox[{
+           RowBox[{"ColorData", "[", 
+            RowBox[{"#", ",", "\"\<Image\>\""}], "]"}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", "200"}]}], "]"}], ",", 
+         RowBox[{"FrameStyle", "\[Rule]", "Gray"}]}], "]"}], "&"}], "/@", 
+      RowBox[{"ColorData", "[", "\"\<Indexed\>\"", "]"}]}], ",", "5", ",", 
+     "5", ",", "1", ",", 
+     RowBox[{"{", "}"}]}], "]"}], ",", 
+   RowBox[{"Spacings", "\[Rule]", ".25"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.544511841188221*^9, 3.544511841294346*^9}, {
+  3.5445119495528297`*^9, 3.544511949655508*^9}, {3.5445121543253098`*^9, 
+  3.5445122466727123`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.24720000000000014`, 0.24, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.6, 0.24, 0.4428931686004542], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.6, 0.5470136627990908, 0.24], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.24, 0.6, 0.33692049419863584`], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.24, 0.3531726744018182, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.6, 0.24, 0.5632658430022722], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.6, 0.42664098839727194`, 0.24], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.2634521802031821, 0.6, 0.24], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.24, 0.47354534880363613`, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.5163614825959097, 0.24, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.6, 0.3062683139954558, 0.24], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.3838248546049982, 0.6, 0.24], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.24, 0.5939180232054561, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.39598880819409377`, 0.24, 0.6], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}, 
+        {RGBColor[0.6, 0.24, 0.2941043604063603], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{15, 0}, Offset[{-1, -1}, {16, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.8588235294117647, 0.00784313725490196, 0.00784313725490196], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[1., 0.26666666666666666`, 0.], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1., 0.4549019607843137, 0.2549019607843137], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.4823529411764706, 0.18823529411764706`, 0.03529411764705882], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[1., 0.8784313725490196, 0.5058823529411764], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.7019607843137254, 0.7450980392156863, 0.8235294117647058],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.20784313725490197`, 0.23921568627450981`, 0.3215686274509804], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.08627450980392157, 0.1411764705882353, 0.28627450980392155`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.33725490196078434`, 0.403921568627451, 0.6235294117647059], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0., 0., 0.], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.996078431372549, 0.3607843137254902, 0.027450980392156862`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.996078431372549, 0.9882352941176471, 0.03529411764705882],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.5411764705882353, 0.7137254901960784, 0.027450980392156862`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.1450980392156863, 0.43529411764705883`, 0.3843137254901961], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.00784313725490196, 0.5098039215686274, 0.9294117647058824], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.15294117647058825`, 0.11372549019607843`, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.47058823529411764`, 0.2627450980392157, 0.5843137254901961], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.8901960784313725, 0.011764705882352941`, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.9058823529411765, 0.027450980392156862`, 0.12941176470588237`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.2235294117647059, 0.2235294117647059, 0.2235294117647059],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.21176470588235294`, 0.13725490196078433`, 0.11372549019607843`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.5372549019607843, 0.3843137254901961, 0.2549019607843137],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.4235294117647059, 0.3254901960784314, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9372549019607843, 0.7607843137254902, 0.403921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.996078431372549, 0.9058823529411765, 0.38823529411764707`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.6235294117647059, 0.592156862745098, 0.4], EdgeForm[
+         Opacity[0.1]], RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.6980392156862745, 0.6745098039215687, 0.3686274509803922],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.41568627450980394`, 0.45098039215686275`, 0.3764705882352941], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.3333333333333333, 0.38823529411764707`, 0.2901960784313726], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.4588235294117647, 0.1411764705882353, 0.1411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.6274509803921569, 0.23137254901960785`, 0.23137254901960785`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.3803921568627451, 0.2784313725490196, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.5882352941176471, 0.44313725490196076`, 0.33725490196078434`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.592156862745098, 0.4196078431372549, 0.2823529411764706], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.8235294117647058, 0.5019607843137255, 0.09411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.9764705882352941, 0.6901960784313725, 0.3215686274509804],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.396078431372549, 0.396078431372549, 0.17647058823529413`],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.41568627450980394`, 0.41568627450980394`, 0.3058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.6313725490196078, 0.6313725490196078, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.3411764705882353, 0.3411764705882353, 0.3411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.6431372549019608, 0.10588235294117647`, 0.043137254901960784`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.19215686274509805`, 0.10588235294117647`, 0.06274509803921569], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.792156862745098, 0.7333333333333333, 0.611764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.8117647058823529, 0.596078431372549, 0.027450980392156862`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.10588235294117647`, 0.2549019607843137, 0.1607843137254902], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.12549019607843137`, 0.30980392156862746`, 0.42745098039215684`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.0784313725490196, 0.1450980392156863, 0.3176470588235294],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.6588235294117647, 0.6039215686274509, 0.7019607843137254],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.5215686274509804, 0.4196078431372549, 0.4549019607843137],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[
+         0.48627450980392156`, 0.03137254901960784, 0.09411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.5019607843137255, 0.4980392156862745, 0.4980392156862745],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.796078431372549, 0.5137254901960784, 0.4980392156862745], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.40784313725490196`, 0.24313725490196078`, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.803921568627451, 0.6862745098039216, 0.6039215686274509], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.28627450980392155`, 0.23921568627450981`, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.7568627450980392, 0.7058823529411765, 0.5764705882352941],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.6980392156862745, 0.7254901960784313, 0.5647058823529412],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.4588235294117647, 0.5764705882352941, 0.5058823529411764],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.5725490196078431, 0.6313725490196078, 0.6705882352941176],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.3411764705882353, 0.34509803921568627`, 0.34901960784313724`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.2627450980392157, 0.3411764705882353, 0.4470588235294118],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.611764705882353, 0.2980392156862745, 0.29411764705882354`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[1., 0.8549019607843137, 0.8274509803921568], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.8588235294117647, 0.5607843137254902, 0.4588235294117647],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.6549019607843137, 0.2980392156862745, 0.08235294117647059], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.8705882352941177, 0.9254901960784314, 0.21568627450980393`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.5019607843137255, 0.6862745098039216, 0.03529411764705882], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.21568627450980393`, 0.36470588235294116`, 0.16470588235294117`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.24313725490196078`, 0.3176470588235294, 0.30980392156862746`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.6862745098039216, 0.19215686274509805`, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.9372549019607843, 0.6470588235294118, 0.6431372549019608],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.6745098039215687, 0.07450980392156863, 0.043137254901960784`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.8627450980392157, 0.5215686274509804, 0.34509803921568627`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.9686274509803922, 0.6039215686274509, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.38823529411764707`, 0.42745098039215684`, 0.396078431372549], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.11764705882352941`, 0.10588235294117647`, 0.3843137254901961], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.09411764705882353, 0.08235294117647059, 0.2901960784313726], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.2823529411764706, 0.21176470588235294`, 0.27450980392156865`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.6470588235294118, 0.5686274509803921, 0.611764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.6980392156862745, 0.01568627450980392, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.9215686274509803, 0.49411764705882355`, 0.43137254901960786`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9372549019607843, 0.6274509803921569, 0.16862745098039217`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.9921568627450981, 0.8156862745098039, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.7254901960784313, 0.8, 0.07058823529411765], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.3176470588235294, 0.49019607843137253`, 0.0784313725490196], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.17254901960784313`, 0.3607843137254902, 0.07058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.3607843137254902, 0.40784313725490196`, 0.5333333333333333], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.22745098039215686`, 0.23921568627450981`, 0.45098039215686275`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.09803921568627451, 0.06666666666666667, 0.25098039215686274`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.5607843137254902, 0.5254901960784314, 0.5647058823529412],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.6588235294117647, 0.3411764705882353, 0.32941176470588235`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8823529411764706, 0.28627450980392155`, 0.20392156862745098`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.8901960784313725, 0.788235294117647, 0.6509803921568628], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.6666666666666666, 0.5058823529411764, 0.19607843137254902`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.6666666666666666, 0.6980392156862745, 0.403921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.5843137254901961, 0.7725490196078432, 0.3411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.7137254901960784, 0.7607843137254902, 0.9176470588235294],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.6549019607843137, 0.6509803921568628, 0.8156862745098039],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.6235294117647059, 0.1450980392156863, 0.12549019607843137`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.6588235294117647, 0.3058823529411765, 0.17254901960784313`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.24313725490196078`, 0.11764705882352941`, 0.058823529411764705`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.9450980392156862, 0.7529411764705882, 0.6352941176470588],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.8392156862745098, 0.4745098039215686, 0.21176470588235294`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.8274509803921568, 0.7254901960784313, 0.43529411764705883`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.44313725490196076`, 0.4980392156862745, 0.5490196078431373], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.24705882352941178`, 0.30980392156862746`, 0.37254901960784315`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.16862745098039217`, 0.23921568627450981`, 0.3803921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.2980392156862745, 0.17647058823529413`, 0.19607843137254902`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.6588235294117647, 0.4980392156862745, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.7215686274509804, 0.1843137254901961, 0.050980392156862744`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.803921568627451, 0.5450980392156862, 0.4588235294117647], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.8156862745098039, 0.6901960784313725, 0.6313725490196078],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9490196078431372, 0.8745098039215686, 0.7176470588235294],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.3803921568627451, 0.3843137254901961, 0.6352941176470588],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.23137254901960785`, 0.20784313725490197`, 0.5529411764705883], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.5843137254901961, 0.5607843137254902, 0.6627450980392157],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.4666666666666667, 0.27450980392156865`, 0.34901960784313724`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.596078431372549, 0.27450980392156865`, 0.36470588235294116`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.8352941176470589, 0.5764705882352941, 0.5607843137254902],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.9490196078431372, 0.29411764705882354`, 0.050980392156862744`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1., 0.7333333333333333, 0.2], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.996078431372549, 0.9490196078431372, 0.44313725490196076`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.7058823529411765, 0.6862745098039216, 0.30196078431372547`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.41568627450980394`, 0.5450980392156862, 0.12156862745098039`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.0196078431372549, 0.20784313725490197`, 0.4627450980392157], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.6862745098039216, 0.7215686274509804, 0.8117647058823529],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.42745098039215684`, 0.06666666666666667, 0.1568627450980392], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.8549019607843137, 0.19607843137254902`, 0.27450980392156865`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.40784313725490196`, 0.15294117647058825`, 0.13725490196078433`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.6588235294117647, 0.5607843137254902, 0.5333333333333333],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.8313725490196079, 0.43529411764705883`, 0.12941176470588237`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.8941176470588236, 0.8274509803921568, 0.7647058823529411],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9372549019607843, 0.7764705882352941, 0.3137254901960784],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.23921568627450981`, 0.27058823529411763`, 0.4627450980392157], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.23529411764705882`, 0.1450980392156863, 0.4588235294117647], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.36470588235294116`, 0.23921568627450981`, 0.43137254901960786`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.2196078431372549, 0.12549019607843137`, 0.18823529411764706`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.5529411764705883, 0.12941176470588237`, 0.2235294117647059], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[
+         0.7058823529411765, 0.2627450980392157, 0.27058823529411763`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.4549019607843137, 0.050980392156862744`, 0.023529411764705882`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.6784313725490196, 0.3137254901960784, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9058823529411765, 0.6392156862745098, 0.07058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.16470588235294117`, 0.41568627450980394`, 0.11764705882352941`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.8549019607843137, 0.9607843137254902, 1.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.12156862745098039`, 0.5098039215686274, 0.7333333333333333], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.6392156862745098, 0.5607843137254902, 0.7529411764705882],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.1450980392156863, 0.11372549019607843`, 0.16470588235294117`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.9411764705882353, 0., 0.00784313725490196], EdgeForm[
+         Opacity[0.1]], RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.2823529411764706, 0.22745098039215686`, 0.2235294117647059], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.5647058823529412, 0.23137254901960785`, 0.15294117647058825`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.6392156862745098, 0.39215686274509803`, 0.3333333333333333], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.8627450980392157, 0.6196078431372549, 0.2627450980392157],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9647058823529412, 0.788235294117647, 0.5254901960784314], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.4588235294117647, 0.592156862745098, 0.4627450980392157], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.23921568627450981`, 0.45098039215686275`, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.34509803921568627`, 0.5803921568627451, 0.6901960784313725], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.1843137254901961, 0.39215686274509803`, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.5686274509803921, 0.7490196078431373, 0.8431372549019608],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.7647058823529411, 0.5568627450980392, 0.5411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.9921568627450981, 0.788235294117647, 0.7568627450980392], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.29411764705882354`, 0.19215686274509805`, 0.10588235294117647`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.37254901960784315`, 0.2784313725490196, 0.19215686274509805`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.29411764705882354`, 0.27058823529411763`, 0.18823529411764706`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.7098039215686275, 0.6980392156862745, 0.5058823529411764],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.8705882352941177, 0.8784313725490196, 0.6901960784313725],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.27058823529411763`, 0.33725490196078434`, 0.28627450980392155`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.6980392156862745, 0.43529411764705883`, 0.4470588235294118], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.5686274509803921, 0.043137254901960784`, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.5607843137254902, 0.22745098039215686`, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.6627450980392157, 0.3333333333333333, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.8470588235294118, 0.6392156862745098, 0.42745098039215684`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.7686274509803922, 0.4627450980392157, 0.14901960784313725`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.01568627450980392, 0.19215686274509805`, 0.09803921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.19215686274509805`, 0.3686274509803922, 0.27450980392156865`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.4, 0.5254901960784314, 0.4588235294117647], EdgeForm[
+         Opacity[0.1]], RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.06666666666666667, 0.15294117647058825`, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.7450980392156863, 0.06666666666666667, 0.00392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.9019607843137255, 0.19607843137254902`, 0.12941176470588237`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.3568627450980392, 0.054901960784313725`, 0.01568627450980392], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.6823529411764706, 0.41568627450980394`, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.8352941176470589, 0.6274509803921569, 0.08627450980392157], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.9803921568627451, 0.7803921568627451, 0.25882352941176473`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1., 0.9058823529411765, 0.6549019607843137], EdgeForm[
+         Opacity[0.1]], RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.3843137254901961, 0.6, 0.8784313725490196], EdgeForm[
+         Opacity[0.1]], RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.06274509803921569, 0.25882352941176473`, 0.5137254901960784], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.12549019607843137`, 0.36470588235294116`, 0.6784313725490196], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.9411764705882353, 0.49411764705882355`, 0.45098039215686275`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8745098039215686, 0.4666666666666667, 0.32941176470588235`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1., 0.35294117647058826`, 0.12156862745098039`], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.9725490196078431, 0.8, 0.5450980392156862], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9137254901960784, 0.803921568627451, 0.6078431372549019], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.7843137254901961, 0.6901960784313725, 0.5176470588235295],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.4588235294117647, 0.37254901960784315`, 0.18823529411764706`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.6941176470588235, 0.6235294117647059, 0.3803921568627451],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.43529411764705883`, 0.30980392156862746`, 0.3764705882352941], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.20392156862745098`, 0.0784313725490196, 0.12156862745098039`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.40784313725490196`, 0.06666666666666667, 0.03137254901960784], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8627450980392157, 0.403921568627451, 0.027450980392156862`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.9372549019607843, 0.7764705882352941, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.6392156862745098, 0.7568627450980392, 0.8980392156862745],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.3137254901960784, 0.3686274509803922, 0.6470588235294118],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.596078431372549, 0.5529411764705883, 0.8117647058823529], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.15294117647058825`, 0.050980392156862744`, 0.10196078431372549`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.8705882352941177, 0.5333333333333333, 0.6392156862745098],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.7215686274509804, 0.13333333333333333`, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.35294117647058826`, 0.043137254901960784`, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.44313725490196076`, 0.17254901960784313`, 0.0196078431372549], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.42745098039215684`, 0.2, 0.054901960784313725`], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.8509803921568627, 0.5568627450980392, 0.32941176470588235`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.9607843137254902, 0.7529411764705882, 0.5568627450980392],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.7725490196078432, 0.5568627450980392, 0.24313725490196078`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.803921568627451, 0.5333333333333333, 0.13725490196078433`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.9333333333333333, 0.7215686274509804, 0.34509803921568627`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.9215686274509803, 0.49411764705882355`, 0.43137254901960786`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[1., 0.7215686274509804, 0.2196078431372549], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9490196078431372, 0.8627450980392157, 0.43529411764705883`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.6705882352941176, 0.8784313725490196, 0.9372549019607843],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.3176470588235294, 0.6549019607843137, 0.7529411764705882],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.12941176470588237`, 0.5176470588235295, 0.6313725490196078], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.09019607843137255, 0.33725490196078434`, 0.49411764705882355`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.7058823529411765, 0.49411764705882355`, 0.5450980392156862], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.5333333333333333, 0.23529411764705882`, 0.3058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.8941176470588236, 0.7098039215686275, 0.7490196078431373],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.20392156862745098`, 0.03529411764705882, 0.00392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.6, 0.16470588235294117`, 0.07450980392156863], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.3411764705882353, 0.06274509803921569, 0.00392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.796078431372549, 0.4, 0.09019607843137255], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.796078431372549, 0.4823529411764706, 0.19215686274509805`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.6705882352941176, 0.4666666666666667, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.3843137254901961, 0.24313725490196078`, 0.027450980392156862`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.49411764705882355`, 0.3607843137254902, 0.023529411764705882`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.14901960784313725`, 0.2, 0.043137254901960784`], EdgeForm[
+         Opacity[0.1]], RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.47058823529411764`, 0.14901960784313725`, 0.08627450980392157], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.9098039215686274, 0.3607843137254902, 0.21568627450980393`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.8705882352941177, 0.3607843137254902, 0.050980392156862744`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.803921568627451, 0.7254901960784313, 0.6313725490196078], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.4392156862745098, 0.27450980392156865`, 0.06666666666666667], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.9254901960784314, 0.8549019607843137, 0.7529411764705882],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.9176470588235294, 0.6862745098039216, 0.32941176470588235`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.3254901960784314, 0.4549019607843137, 0.4745098039215686],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.6549019607843137, 0.10980392156862745`, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.9803921568627451, 0.7294117647058823, 0.5490196078431373],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.9490196078431372, 0.596078431372549, 0.2196078431372549], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.996078431372549, 1., 0.8588235294117647], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.37254901960784315`, 0.5333333333333333, 0.3686274509803922], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.8666666666666667, 0.9294117647058824, 0.8901960784313725],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.49019607843137253`, 0.7176470588235294, 0.6235294117647059], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.49019607843137253`, 0.6627450980392157, 0.6745098039215687], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.6235294117647059, 0.807843137254902, 0.8705882352941177], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.8, 0.43529411764705883`, 0.5176470588235295], EdgeForm[
+         Opacity[0.1]], RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.9058823529411765, 0.3803921568627451, 0.27450980392156865`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8392156862745098, 0.5529411764705883, 0.47843137254901963`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.6549019607843137, 0.4392156862745098, 0.3607843137254902],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.9647058823529412, 0.7058823529411765, 0.17254901960784313`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.8196078431372549, 0.7411764705882353, 0.2980392156862745],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.03529411764705882, 0.49411764705882355`, 0.7058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.24705882352941178`, 0.44313725490196076`, 0.5803921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0., 0.4745098039215686, 0.8549019607843137], EdgeForm[
+         Opacity[0.1]], RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.6431372549019608, 0.4196078431372549, 0.47843137254901963`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.7568627450980392, 0.28627450980392155`, 0.18823529411764706`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.7372549019607844, 0.37254901960784315`, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.7843137254901961, 0.6274509803921569, 0.49019607843137253`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.8509803921568627, 0.6862745098039216, 0.15294117647058825`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.3333333333333333, 0.2980392156862745, 0.17647058823529413`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.6784313725490196, 0.7176470588235294, 0.6196078431372549],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.21176470588235294`, 0.3215686274509804, 0.5686274509803921], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0., 0.09019607843137255, 0.3411764705882353], EdgeForm[
+         Opacity[0.1]], RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.4549019607843137, 0.30196078431372547`, 0.3137254901960784], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[
+         0.49019607843137253`, 0.27058823529411763`, 0.2823529411764706], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.23137254901960785`, 0.17647058823529413`, 0.16470588235294117`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.36470588235294116`, 0.1843137254901961, 0.12549019607843137`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.5333333333333333, 0.26666666666666666`, 0.11372549019607843`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.6431372549019608, 0.5215686274509804, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.8705882352941177, 0.8901960784313725, 0.6784313725490196],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.6784313725490196, 0.7725490196078432, 0.6705882352941176],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.4117647058823529, 0.5254901960784314, 0.5490196078431373],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.4, 0.403921568627451, 0.4117647058823529], EdgeForm[
+         Opacity[0.1]], RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.5176470588235295, 0.5098039215686274, 0.5137254901960784],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.8705882352941177, 0.30980392156862746`, 0.1450980392156863], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.9803921568627451, 0.37254901960784315`, 0.19215686274509805`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.4196078431372549, 0.21176470588235294`, 0.1411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.8980392156862745, 0.611764705882353, 0.45098039215686275`]
+         , EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.7725490196078432, 0.5098039215686274, 0.15294117647058825`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.8352941176470589, 0.7333333333333333, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.596078431372549, 0.8196078431372549, 0.6901960784313725], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.2196078431372549, 0.5568627450980392, 0.37254901960784315`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.23921568627450981`, 0.4196078431372549, 0.5215686274509804], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.4, 0.10196078431372549`, 0.], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.9803921568627451, 0.807843137254902, 0.7333333333333333], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.7490196078431373, 0.43529411764705883`, 0.24705882352941178`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.8235294117647058, 0.6039215686274509, 0.34901960784313724`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.4745098039215686, 0.3607843137254902, 0.11764705882352941`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.8352941176470589, 0.7372549019607844, 0.5058823529411764],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1., 0.9098039215686274, 0.6627450980392157], EdgeForm[
+         Opacity[0.1]], RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.8588235294117647, 0.9254901960784314, 0.7764705882352941],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.4588235294117647, 0.25098039215686274`, 0.2901960784313726], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.5882352941176471, 0.3058823529411765, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.7411764705882353, 0.5294117647058824, 0.3843137254901961],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.8509803921568627, 0.7333333333333333, 0.592156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.8235294117647058, 0.7254901960784313, 0.39215686274509803`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.8823529411764706, 0.8196078431372549, 0.6039215686274509],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.5843137254901961, 0.6705882352941176, 0.43529411764705883`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.8352941176470589, 0.8784313725490196, 0.7607843137254902],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.3137254901960784, 0.43529411764705883`, 0.10588235294117647`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.4, 0.3254901960784314, 0.2901960784313726], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.6705882352941176, 0.6274509803921569, 0.49411764705882355`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.796078431372549, 0.803921568627451, 0.7725490196078432], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.8705882352941177, 0.9490196078431372, 0.7176470588235294],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.6705882352941176, 0.7607843137254902, 0.615686274509804], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.9490196078431372, 0.9803921568627451, 0.9882352941176471],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.803921568627451, 0.30980392156862746`, 0.07058823529411765], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[1., 0.7254901960784313, 0.09411764705882353], EdgeForm[
+         Opacity[0.1]], RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9568627450980393, 0.796078431372549, 0.13725490196078433`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.9529411764705882, 0.9803921568627451, 0.5725490196078431],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.4117647058823529, 0.592156862745098, 0.4], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.30980392156862746`, 0.47058823529411764`, 0.34509803921568627`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.2980392156862745, 0.28627450980392155`, 0.5490196078431373], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.27058823529411763`, 0.1843137254901961, 0.3764705882352941], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[
+         0.8784313725490196, 0.10196078431372549`, 0.20784313725490197`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.8, 0.058823529411764705`, 0.07450980392156863], EdgeForm[
+         Opacity[0.1]], RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.8235294117647058, 0.7333333333333333, 0.6862745098039216],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.40784313725490196`, 0.42745098039215684`, 0.26666666666666666`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.615686274509804, 0.6862745098039216, 0.48627450980392156`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.33725490196078434`, 0.43529411764705883`, 0.39215686274509803`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.5254901960784314, 0.592156862745098, 0.6], EdgeForm[
+         Opacity[0.1]], RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.4235294117647059, 0.4588235294117647, 0.4823529411764706],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.39215686274509803`, 0.49411764705882355`, 0.5686274509803921], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.6078431372549019, 0.5607843137254902, 0.5803921568627451],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[
+         0.8549019607843137, 0.39215686274509803`, 0.14901960784313725`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.7176470588235294, 0.27450980392156865`, 0.0392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1., 0.5568627450980392, 0.3215686274509804], EdgeForm[
+         Opacity[0.1]], RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[1., 0.807843137254902, 0.4627450980392157], EdgeForm[
+         Opacity[0.1]], RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.8156862745098039, 0.6078431372549019, 0.23137254901960785`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.6588235294117647, 0.596078431372549, 0.27058823529411763`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.9294117647058824, 0.9058823529411765, 0.7803921568627451],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.8117647058823529, 0.7607843137254902, 0.47843137254901963`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.6588235294117647, 0.7803921568627451, 0.9411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.4235294117647059, 0.6039215686274509, 0.8431372549019608],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.2, 0.41568627450980394`, 0.7019607843137254], EdgeForm[
+         Opacity[0.1]], RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.5686274509803921, 0.2980392156862745, 0.1450980392156863],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.7058823529411765, 0.6980392156862745, 0.4980392156862745],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.6509803921568628, 0.7607843137254902, 0.22745098039215686`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.39215686274509803`, 0.7294117647058823, 0.5843137254901961], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.8235294117647058, 0.8941176470588236, 0.9490196078431372],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.22745098039215686`, 0.19215686274509805`, 0.4], EdgeForm[
+         Opacity[0.1]], RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.5019607843137255, 0.23921568627450981`, 0.4470588235294118], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.6705882352941176, 0.12941176470588237`, 0.22745098039215686`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.8705882352941177, 0.3411764705882353, 0.0196078431372549],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8117647058823529, 0.3686274509803922, 0.06274509803921569], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9372549019607843, 0.7176470588235294, 0.14901960784313725`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.13333333333333333`, 0.2784313725490196, 0.10980392156862745`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.2549019607843137, 0.5411764705882353, 0.3215686274509804],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.3215686274509804, 0.5058823529411764, 0.615686274509804], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.3686274509803922, 0.4470588235294118, 0.5764705882352941],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.5411764705882353, 0.5411764705882353, 0.5725490196078431],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.7450980392156863, 0.30196078431372547`, 0.], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.8823529411764706, 0.49411764705882355`, 0.09411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.8274509803921568, 0.8117647058823529, 0.4549019607843137],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.6823529411764706, 0.6901960784313725, 0.6470588235294118],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.611764705882353, 0.6901960784313725, 0.3411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.27058823529411763`, 0.45098039215686275`, 0.3411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.1607843137254902, 0.2784313725490196, 0.37254901960784315`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.14901960784313725`, 0.27058823529411763`, 0.4823529411764706], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.0784313725490196, 0.1607843137254902, 0.3686274509803922],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.6588235294117647, 0.6352941176470588, 0.807843137254902], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.7372549019607844, 0.4745098039215686, 0.2], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[
+         0.5058823529411764, 0.28627450980392155`, 0.047058823529411764`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.24705882352941178`, 0.2980392156862745, 0.25882352941176473`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.396078431372549, 0.5450980392156862, 0.43137254901960786`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.5411764705882353, 0.5019607843137255, 0.6352941176470588],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.21568627450980393`, 0.11764705882352941`, 0.32941176470588235`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.36470588235294116`, 0.2980392156862745, 0.4392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.9254901960784314, 0.8666666666666667, 0.7568627450980392],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.7333333333333333, 0.6666666666666666, 0.5411764705882353],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.5843137254901961, 0.5333333333333333, 0.4117647058823529],
+          EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.6862745098039216, 0.6470588235294118, 0.27450980392156865`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[1., 0.796078431372549, 0.2627450980392157], EdgeForm[
+         Opacity[0.1]], RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.9215686274509803, 0.8862745098039215, 0.592156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[
+         0.9607843137254902, 0.9176470588235294, 0.00784313725490196], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[
+         0.1803921568627451, 0.06274509803921569, 0.5803921568627451], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[
+         0.1803921568627451, 0.011764705882352941`, 0.3333333333333333], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[
+         0.5294117647058824, 0.40784313725490196`, 0.6392156862745098], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[
+         0.7372549019607844, 0.18823529411764706`, 0.3411764705882353], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[
+         0.7843137254901961, 0.07058823529411765, 0.23137254901960785`], 
+         EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.9058823529411765, 0., 0.0784313725490196], EdgeForm[
+         Opacity[0.1]], RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.692302, 0.618341, 0.375174], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.4533, 0.506783, 0.175158], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.814481, 0.0706188, 0.0264134], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.705882, 0.578744, 0.240635], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.606332, 0.199557, 0.0732433], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.788418, 0.814481, 0.359167], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.755657, 0.279011, 0.0189212], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.742077, 0.466728, 0.0988632], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.697078, 0.302922, 0.383215], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[1, 0.501961, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.529412, 0.322988, 0.0804608], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.660639, 0.659358, 0.122408], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.936645, 0.79704, 0.0903487], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.797253, 0.904982, 0.410498], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.934691, 0.945708, 0.75346], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.769879, 0.92369, 0.977371], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[1, 0.566415, 0.0386511], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[1, 1, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[1, 0.784756, 0.323308], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.909499, 0.582605, 0.44213], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.621866, 0.909026, 0.965408], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[1, 0.542397, 0.309712], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.645075, 0.644968, 0.978851], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.755657, 0.61117, 0.154498], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.855879, 0.665019, 0.302953], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.780926, 0.753979, 0.604883], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.807065, 0.511589, 0.285222], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.866682, 0.764462, 0.397528], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.735576, 0.755901, 0.876387], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.855879, 0.62414, 0.192096], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1, 0.815946, 0.794202], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[1, 0.922957, 0.384054], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.733028, 0.519722, 0.0599069], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.788251, 0.806806, 0.950225], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.793454, 0.387564, 0.166766], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.877821, 0.790021, 0.310719], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.601816, 0.416114, 0.0997787], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.936645, 0.910887, 0.747143], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}, 
+        {RGBColor[0.60705, 0.625162, 0.72398], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{15, 0}, Offset[{-1, -1}, {16, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {GrayLevel[0.501961], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {GrayLevel[0.660639], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.593454, 0.888609, 0.918547], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.346227, 0.71075, 0.927596], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.355077, 0.714931, 0.54519], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.2869, 0.583703, 0.280903], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.490944, 0.719463, 0.356405], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.377615, 0.477134, 0.916426], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.305684, 0.394965, 0.755657], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.168902, 0.250996, 0.633478], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {GrayLevel[0.393668], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.43949, 0.503655, 0.619913], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.805432, 0.43006, 0.438804], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.963806, 0.591257, 0.601724], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.63801, 0.0991073, 0.147646], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.733028, 0.239811, 0.279622], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.873304, 0.567529, 0.217945], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.316747, 0.0594034, 0.0387579], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.316747, 0.224979, 0.242267], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.873304, 0.356405, 0.384848], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.606332, 0.370703, 0.114763], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.687785, 0.0596323, 0.0222934], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.823529, 0.788464, 0.657969], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.710414, 0.677302, 0.556176], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.687785, 0.640955, 0.477546], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.610864, 0.569268, 0.42414], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.493217, 0.434531, 0.340993], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.37557, 0.330877, 0.259648], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.271489, 0.239185, 0.187701], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.153841, 0.135546, 0.106355], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.271489, 0.262257, 0.201144], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.244526, 0.215335, 0.14963], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.714931, 0.604425, 0.0751812], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.950225, 0.85272, 0.062623], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.968322, 0.939544, 0.0737011], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.987869, 1, 0.364248], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.904982, 0.80087, 0.0986343], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.976333, 1, 0.501946], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.850675, 0.768994, 0.314717], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.565606, 0.469108, 0.0232242], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.976333, 1, 0.501946], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[1, 1, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.63801, 0.562615, 0.258091], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[1, 0.753262, 0.0437629], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.945708, 0.661402, 0.128328], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1, 0.854948, 0.112474], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.850675, 0.561089, 0.0324254], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[1, 0.70927, 0.144472], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.714931, 0.467216, 0.0763714], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1, 0.79234, 0.292164], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.592767, 0.410986, 0.121248], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[1, 0.917754, 0.0541543], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.371038, 0.280095, 0.0870375], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.773754, 0.420615, 0.187213], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.443442, 0.110262, 0.100633], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.877699, 0.728923, 0.228702], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.882353, 0.597772, 0.124285], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.266972, 0.112123, 0.117922], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.683253, 0.00616464, 0.0506752], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1, 0.8, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.70135, 0.246342, 0.10016], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.969253, 0.932845, 0.614572], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.131228, 0.074464, 0.0730449], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.922972, 0.986419, 0.46389], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.501961, 0, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.773754, 0.146609, 0.00296025], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.986419, 0.905287, 0.0534218], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.417227, 0.46154, 0.157656], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.900893, 0.727153, 0.205951], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.900893, 0.344152, 0.236088], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.447959, 0.27097, 0.0874037], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.877821, 0.53579, 0.248753], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.986419, 0.945861, 0.519921], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.358999, 0.36199, 0.0027924], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.986419, 0.918746, 0.320531], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.683253, 0.497841, 0.0674754], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.782803, 0.164904, 0.400458], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.909499, 0.613916, 0.204196], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.806577, 0.385397, 0.762768], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.698817, 0.873304, 0.295247], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.378897, 0.873304, 0.787549], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[1, 0.529198, 0.324819], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[1, 0.998367, 0.434775], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.873304, 0.150484, 0.255131], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.723598, 0.791043, 0.963806], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.85037, 0.558389, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[1, 0.998856, 0.00207523], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.273106, 0.542992, 0.495583], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[1, 0.740871, 0.828473], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.630091, 0.148196, 0.579461], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}, 
+        {RGBColor[0.346715, 0.587594, 0.244526], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{15, 0}, Offset[{-1, -1}, {16, 1}]]}, 
+        {RGBColor[0.927596, 0.725414, 0.204257], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{16, 0}, Offset[{-1, -1}, {17, 1}]]}, 
+        {RGBColor[0.332128, 0.305196, 0.579187], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{17, 0}, Offset[{-1, -1}, {18, 1}]]}, 
+        {RGBColor[1, 0.778332, 0.734707], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{18, 0}, Offset[{-1, -1}, {19, 1}]]}, 
+        {RGBColor[0.501961, 0.501961, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{19, 0}, Offset[{-1, -1}, {20, 1}]]}, 
+        {RGBColor[0.501961, 0, 0.25098], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{20, 0}, Offset[{-1, -1}, {21, 1}]]}, 
+        {RGBColor[1, 1, 0.762768], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{21, 0}, Offset[{-1, -1}, {22, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.709133, 0.747539, 0.83711], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.813855, 0.974746, 0.996429], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.76527, 0.954757, 0.912932], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.581781, 0.801038, 0.828061], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.66154, 0.87277, 0.882353], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.616999, 0.753475, 0.909499], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.88957, 0.713878, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.737484, 0.745327, 0.909499], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.775662, 0.632776, 0.918547], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.642084, 0.509957, 0.868772], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.507195, 0.428443, 0.710414], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.393545, 0.336843, 0.561089], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.342138, 0.241611, 0.452491], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.814481, 0.432822, 0.406287], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[1, 0.4, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.954757, 0.215122, 0.0483253], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.268833, 0.246555, 0.506783], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.570138, 0.0971847, 0.0971847], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.409247, 0.384085, 0.823529], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.924651, 0.699779, 0.839963], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.349065, 0.298116, 0.642527], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.380087, 0.118044, 0.155291], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.640833, 0.661311, 0.886885], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.823529, 0.00888075, 0.0356909], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.211917, 0.157198, 0.411765], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.339361, 0.306752, 0.0416419], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.76817, 0.891402, 0.871962], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.610864, 0.327443, 0.219913], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.909773, 0.932128, 0.699825], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.418616, 0.48278, 0.719463], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {GrayLevel[0.642527], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.814481, 0.554788, 0.334264], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.832578, 0.811261, 0.567498], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.696834, 0.400534, 0.293294], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.592264, 0.649119, 0.873304], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.380087, 0.377371, 0.298589], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.986908, 1, 0.771313], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.367086, 0.40798, 0.547509], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.266972, 0.247196, 0.155093], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}, 
+        {RGBColor[0.52784, 0.214603, 0.157061], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{15, 0}, Offset[{-1, -1}, {16, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.742077, 0.0624857, 0.00605783], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0, 0.501961, 0], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.891279, 0.721172, 0.777905], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.0620432, 0.521904, 0.704387], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.823529, 0.663981, 0.00828565], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[1, 0.0175937, 0.505959], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.975067, 1, 0.906294], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.162524, 0.167422, 0.153964], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.904982, 0.676844, 0.566705], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.475792, 0.675181, 0.189776], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.760174, 0.00823987, 0.412406], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0, 0.390173, 0.773754], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[1, 0.904479, 0.279423], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.0184939, 0.438911, 0.147189], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.151827, 0.281636, 0.714931], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.753628, 0.82591, 0.991257], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1, 0.937255, 0.224521], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.915969, 0.930159, 0.97409], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[1, 0.993332, 0.352972], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.208026, 0.25182, 0.529198], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.742367, 0.822126, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.401907, 0.317494, 0.138964], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.98175, 0.967147, 0.930663], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.285069, 0.261799, 0.21828], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.508965, 0.787335, 0.578561], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.777829, 0.453574, 0.511559], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.647059, 0, 0.141192], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[0.968322, 0.591943, 0.687633], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.90045, 0.0204013, 0.0301823], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.829938, 0.725154, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[1, 0.511666, 0.141085], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.566842, 0.967407, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[1, 0.926772, 0.151904], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {GrayLevel[1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.759213, 0.886885, 0.319265], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.4, 0.8, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.959274, 0.614496, 0.466316], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.790433, 0.450294, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[0.895369, 0.716976, 0.346883], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[1, 0.0980392, 0.392157], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[1, 1, 0.392157], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}, 
+        {RGBColor[1, 0.4, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{14, 0}, Offset[{-1, -1}, {15, 1}]]}, 
+        {RGBColor[0.545876, 1, 0.558755], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{15, 0}, Offset[{-1, -1}, {16, 1}]]}, 
+        {RGBColor[0.391867, 0.710414, 0.663966], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{16, 0}, Offset[{-1, -1}, {17, 1}]]}, 
+        {RGBColor[1, 0.8, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{17, 0}, Offset[{-1, -1}, {18, 1}]]}, 
+        {RGBColor[1, 0.4, 0.4], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{18, 0}, Offset[{-1, -1}, {19, 1}]]}, 
+        {RGBColor[1, 0, 1], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{19, 0}, Offset[{-1, -1}, {20, 1}]]}, 
+        {RGBColor[0.563638, 0.606256, 0.935851], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{20, 0}, Offset[{-1, -1}, {21, 1}]]}, 
+        {RGBColor[0.868772, 0.73959, 0.218616], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{21, 0}, Offset[{-1, -1}, {22, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False]},
+    {
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.70135, 0.093019, 0.00140383], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.289647, 0.222614, 0.484169], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.98677, 0.98793, 0.458686], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.42948, 0.524086, 0.719463], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.30808, 0.443137, 0.124895], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.895125, 0.71606, 0.0964523], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.138415, 0.184848, 0.429862], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.882353, 0.0253147, 0.11165], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[0.895125, 0.870893, 0.632624], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], 
+     FrameBox[
+      GraphicsBox[{
+        {RGBColor[0.90045, 0.765209, 0.745602], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{1, 0}, Offset[{-1, -1}, {2, 1}]]}, 
+        {RGBColor[0.864256, 0.544503, 0.601099], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{2, 0}, Offset[{-1, -1}, {3, 1}]]}, 
+        {RGBColor[0.719463, 0.374975, 0.35935], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{3, 0}, Offset[{-1, -1}, {4, 1}]]}, 
+        {RGBColor[0.312215, 0.134813, 0.182895], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{4, 0}, Offset[{-1, -1}, {5, 1}]]}, 
+        {RGBColor[0.488685, 0.199069, 0.220294], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{5, 0}, Offset[{-1, -1}, {6, 1}]]}, 
+        {RGBColor[0.963806, 0.945785, 0.623575], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{6, 0}, Offset[{-1, -1}, {7, 1}]]}, 
+        {RGBColor[0.299687, 0.352941, 0.114382], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{7, 0}, Offset[{-1, -1}, {8, 1}]]}, 
+        {RGBColor[0.606516, 0.669688, 0.306233], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{8, 0}, Offset[{-1, -1}, {9, 1}]]}, 
+        {RGBColor[1, 0.886915, 0.754116], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{9, 0}, Offset[{-1, -1}, {10, 1}]]}, 
+        {RGBColor[0.704433, 0.864256, 0.469459], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{10, 0}, Offset[{-1, -1}, {11, 1}]]}, 
+        {RGBColor[1, 0.978103, 0.943175], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{11, 0}, Offset[{-1, -1}, {12, 1}]]}, 
+        {RGBColor[0.280537, 0.234745, 0.149096], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{12, 0}, Offset[{-1, -1}, {13, 1}]]}, 
+        {RGBColor[0.338262, 0.480644, 0.141192], EdgeForm[Opacity[0.1]], 
+         RectangleBox[{13, 0}, Offset[{-1, -1}, {14, 1}]]}},
+       AspectRatio->NCache[
+         Rational[1, 10], 0.1],
+       ContentSelectable->False,
+       ImageSize->200,
+       PlotRangePadding->None],
+      FrameStyle->GrayLevel[0.5],
+      StripOnInput->False], "", "", ""}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{0.25}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.544511786190269*^9, 3.5445118439376287`*^9, 3.544511952679723*^9, {
+   3.544512159312911*^9, 3.544512249474288*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{44, Automatic}, {Automatic, 104}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 833, 21, 58, "Input"],
+Cell[1415, 45, 118204, 2421, 481, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

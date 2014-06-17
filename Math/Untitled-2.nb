@@ -1,0 +1,92 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2658,         82]
+NotebookOptionsPosition[      2403,         68]
+NotebookOutlinePosition[      2760,         84]
+CellTagsIndexPosition[      2717,         81]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+1) {x, y}, the parameter values over which the loop was iterated
+
+2) {M1, M2, M3, M0, Mtau, 
+MQ, MNR, tan\[Beta], v, vevS, 
+Atop, Abtm, Atau, An11, An12,
+ An13, AlambdaN, Yn11, Yn12, Yn13, 
+ lambda, lambdaN, kappa, PhisPI, Phi2PI, 
+ ksi, Alambda, Akappa}, the input parameters
+ 
+3) {\[Chi]N-mass(5),  \[Chi]C-mass(2), H+-mass(2), \[Nu]-mass(4), snu-mass(8), 
+H0-mass(6), slep-mass(6), sup-mass(2), sdn-mass(2), stp-mass(2), 
+sbt-mass(2)}, the mass eigenvalues, each of these is a vector in itself with \
+the dimension noted in parentheses.
+
+4) {\[Chi]Nre(5x5), \[Chi]Nim(5x5), 
+\[Chi]C-Ure(2x2),  \[Chi]CU-im(2x2), \[Chi]CV-re(2x2), \[Chi]CV-im(2x2),  
+\[Nu]re(4x4), \[Nu]im(4x4), 
+H0(6x6), 
+snu(8x8), 
+slepCre(6x6), slepCim(6x6), 
+sdown-re(2x2), sdown-im(2x2), sup-re(2x2), sup-im(2x2), stop-re(2x2), \
+stop-im(2x2), sbottom-re(2x2), sbottom-im(2x2),
+H+-(2x2)}, the mixing matrices, each of these is a nxn matrix with the \
+dimensions noted in parentheses
+
+5) {omega, CDM candidate name, Xf}, self explanatory
+
+6) {cross section in pb, input channel, output channel}, cross sections for \
+selected channels
+
+7) CDM nucleon magic (amp = micromegas Amplitude, cs=cross section [pb])
+{{n-cdm SI amp, n-anti-cdm SI amp, n-cdm SD amp, n-anti-cdm SD amp}, 
+  {p-cdm SI amp, p-anti-cdm SI amp, p-cdm SD amp, p-anti-cdm SD amp}, 
+  {n-cdm SI cs, n-anti-cdm SI cs, n-cdm SD cs, n-anti-cdm SD cs}, 
+  {p-cdm SI cs, p-anti-cdm SI cs, p-cdm SD cs, p-anti-cdm SD cs}}
+ 
+ 8) Bsgamma ect
+ 
+ 9) {{\[CapitalDelta]a_e, \[CapitalDelta]a_\[Mu], \[CapitalDelta]a_\[Tau]},
+ {d_e, d_\[Mu], d_\[Tau]}, 
+ {BR( \[Tau] -> \[Mu] \[Gamma] ), BR( \[Tau] -> e \[Gamma] ), BR( \[Mu] -> e \
+\[Gamma] ) }} 
+\
+\>", "Text",
+ CellChangeTimes->{{3.5352699449824543`*^9, 3.5352699604237823`*^9}, {
+   3.541830447915804*^9, 3.5418304670652018`*^9}, 3.542007478844495*^9}]
+},
+WindowSize->{740, 655},
+WindowMargins->{{Automatic, -90}, {Automatic, 1}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1842, 46, 581, "Text"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

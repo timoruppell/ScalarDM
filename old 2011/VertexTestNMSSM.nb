@@ -1,0 +1,973 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     34212,        964]
+NotebookOptionsPosition[     33205,        927]
+NotebookOutlinePosition[     33564,        943]
+CellTagsIndexPosition[     33521,        940]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"M1", "=", 
+   RowBox[{"200`50", "GeV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"M2", "=", 
+   RowBox[{"400`50", "GeV"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"M0", "=", 
+   RowBox[{"250`50", "GeV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mtau", "=", 
+   RowBox[{"1.77`50", "GeV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mqud", "=", 
+   RowBox[{"MQ", "=", 
+    RowBox[{"1`50", "TeV"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MNR", "=", 
+   RowBox[{"10`50", "TeV"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"v", "=", 
+   RowBox[{"174`50", "GeV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tan\[Beta]", "=", "5`50"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"vevS", "=", 
+   RowBox[{"\[Mu]", "/", "lambda"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Aud", "=", 
+   RowBox[{"Atop", "=", 
+    RowBox[{"Abtm", "=", 
+     RowBox[{"1500`50", "GeV"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Ae", "=", 
+   RowBox[{"Atau", "=", 
+    RowBox[{
+     RowBox[{"-", "2500`50"}], "GeV"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"An11", "=", 
+   RowBox[{"An12", "=", 
+    RowBox[{"An13", "=", 
+     RowBox[{"AlambdaN", "=", "0`50"}]}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Yn11", "=", 
+   RowBox[{"Yn12", "=", 
+    RowBox[{"Yn13", "=", "0`50"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lambda", "=", "0.2`50"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lambdaN", "=", "0`50"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"kappa", "=", "0.1`50"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"PhisPI", "=", 
+   RowBox[{"Phi2PI", "=", 
+    RowBox[{"ksi", "=", "0`50"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Alambda", "=", 
+   RowBox[{"550`50", "GeV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Akappa", "=", 
+   RowBox[{
+    RowBox[{"-", "200`50"}], "GeV"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Mu]", "=", 
+   RowBox[{"130`50", "GeV"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.513584767385786*^9, 3.513585132993548*^9}, {
+  3.513585220852646*^9, 3.5135852894878263`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "cb", ",", "CW", ",", "EE", ",", "kap0", ",", "lam0", ",", "MW", ",", 
+     "S2W", ",", "sb", ",", "Sqrt2", ",", "SW", ",", "xvev"}], "}"}], "=", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "@", "\[Beta]"}], ",", 
+     RowBox[{"Cos", "@", "\[Theta]w"}], ",", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"4", " ", "Pi", " ", "\[Alpha]ew"}], "]"}], ",", "kappa", ",", 
+     "lambda", ",", "mW", ",", 
+     RowBox[{
+      RowBox[{"Sin", "[", "\[Theta]w", "]"}], "^", "2"}], ",", 
+     RowBox[{"Sin", "@", "\[Beta]"}], ",", 
+     RowBox[{"Sqrt", "@", "2"}], ",", 
+     RowBox[{"Sin", "@", "\[Theta]w"}], ",", 
+     RowBox[{"130", "GeV"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"MNE1", ",", "MNE2", ",", "MNE3", ",", "MNE4", ",", "MNE5"}], 
+    "}"}], "=", 
+   RowBox[{"Reverse", "@", "mNeutralinos"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Zh11", ",", "Zh12", ",", "Zh13"}], "}"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"vHiggsN", "[", 
+      RowBox[{"[", 
+       RowBox[{"Sequence", "@@", "#"}], "]"}], "]"}], "&"}], "/@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"5", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "3"}], "}"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"ZH12", ",", "ZH22", ",", "ZH32"}], "}"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"vHiggsN", "[", 
+      RowBox[{"[", 
+       RowBox[{"Sequence", "@@", "#"}], "]"}], "]"}], "&"}], "/@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"5", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "3"}], "}"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"ZH42", ",", "ZH52", ",", "ZH62"}], "}"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"vHiggsN", "[", 
+      RowBox[{"[", 
+       RowBox[{"Sequence", "@@", "#"}], "]"}], "]"}], "&"}], "/@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"5", ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"5", ",", "6"}], "}"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zn11", ",", "Zn12", ",", "Zn13", ",", "Zn14", ",", "Zn15"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zn21", ",", "Zn22", ",", "Zn23", ",", "Zn24", ",", "Zn25"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zn31", ",", "Zn32", ",", "Zn33", ",", "Zn34", ",", "Zn35"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zn41", ",", "Zn42", ",", "Zn43", ",", "Zn44", ",", "Zn45"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zn51", ",", "Zn52", ",", "Zn53", ",", "Zn54", ",", "Zn55"}], 
+      "}"}]}], "}"}], "=", 
+   RowBox[{"Reverse", "@", "vecN"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "Zn11r", ",", "Zn12r", ",", "Zn13r", ",", "Zn14r", ",", "Zn15r"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "Zn21r", ",", "Zn22r", ",", "Zn23r", ",", "Zn24r", ",", "Zn25r"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "Zn31r", ",", "Zn32r", ",", "Zn33r", ",", "Zn34r", ",", "Zn35r"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "Zn41r", ",", "Zn42r", ",", "Zn43r", ",", "Zn44r", ",", "Zn45r"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "Zn51r", ",", "Zn52r", ",", "Zn53r", ",", "Zn54r", ",", "Zn55r"}], 
+      "}"}]}], "}"}], "=", 
+   RowBox[{"Reverse", "@", "vecN"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zp11r", ",", "Zp12r"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zp21r", ",", "Zp22r"}], "}"}]}], "}"}], "=", 
+   RowBox[{"Re", "@", 
+    RowBox[{"Reverse", "@", "vecCV"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zp11i", ",", "Zp12i"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zp21i", ",", "Zp22i"}], "}"}]}], "}"}], "=", 
+   RowBox[{"Im", "@", 
+    RowBox[{"Reverse", "@", "vecCV"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zm11r", ",", "Zm12r"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zm21r", ",", "Zm22r"}], "}"}]}], "}"}], "=", 
+   RowBox[{"Re", "@", 
+    RowBox[{"Reverse", "@", "vecCU"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zm11i", ",", "Zm12i"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zm21i", ",", "Zm22i"}], "}"}]}], "}"}], "=", 
+   RowBox[{"Im", "@", 
+    RowBox[{"Reverse", "@", "vecCU"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Zv11", ",", "Zv12"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"Zv21", ",", "Zv22"}], "}"}]}], "}"}], "=", 
+   RowBox[{"Reverse", "@", "vecCV"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"Zu11", ",", "Zu12"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Zu21", ",", "Zu22"}], "}"}]}], "}"}], "=", 
+    RowBox[{"Reverse", "@", "vecCU"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"NMM55", "=", 
+   RowBox[{
+    RowBox[{"Zn15", "*", "MNE1", "*", "Zn15"}], "+", 
+    RowBox[{"Zn25", "*", "MNE2", "*", "Zn25"}], "+", 
+    RowBox[{"Zn35", "*", "MNE3", "*", "Zn35"}], "+", 
+    RowBox[{"Zn45", "*", "MNE4", "*", "Zn45"}], "+", 
+    RowBox[{"Zn55", "*", "MNE5", "*", "Zn55"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM34", "=", 
+   RowBox[{
+    RowBox[{"Zn13", "*", "MNE1", "*", "Zn14"}], "+", 
+    RowBox[{"Zn23", "*", "MNE2", "*", "Zn24"}], "+", 
+    RowBox[{"Zn33", "*", "MNE3", "*", "Zn34"}], "+", 
+    RowBox[{"Zn43", "*", "MNE4", "*", "Zn44"}], "+", 
+    RowBox[{"Zn53", "*", "MNE5", "*", "Zn54"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM35", "=", 
+   RowBox[{
+    RowBox[{"Zn13", "*", "MNE1", "*", "Zn15"}], "+", 
+    RowBox[{"Zn23", "*", "MNE2", "*", "Zn25"}], "+", 
+    RowBox[{"Zn33", "*", "MNE3", "*", "Zn35"}], "+", 
+    RowBox[{"Zn43", "*", "MNE4", "*", "Zn45"}], "+", 
+    RowBox[{"Zn53", "*", "MNE5", "*", "Zn55"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM45", "=", 
+   RowBox[{
+    RowBox[{"Zn14", "*", "MNE1", "*", "Zn15"}], "+", 
+    RowBox[{"Zn24", "*", "MNE2", "*", "Zn25"}], "+", 
+    RowBox[{"Zn34", "*", "MNE3", "*", "Zn35"}], "+", 
+    RowBox[{"Zn44", "*", "MNE4", "*", "Zn45"}], "+", 
+    RowBox[{"Zn54", "*", "MNE5", "*", "Zn55"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM13", "=", 
+   RowBox[{
+    RowBox[{"Zn11", "*", "MNE1", "*", "Zn13"}], "+", 
+    RowBox[{"Zn21", "*", "MNE2", "*", "Zn23"}], "+", 
+    RowBox[{"Zn31", "*", "MNE3", "*", "Zn33"}], "+", 
+    RowBox[{"Zn41", "*", "MNE4", "*", "Zn43"}], "+", 
+    RowBox[{"Zn51", "*", "MNE5", "*", "Zn53"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM14", "=", 
+   RowBox[{
+    RowBox[{"Zn11", "*", "MNE1", "*", "Zn14"}], "+", 
+    RowBox[{"Zn21", "*", "MNE2", "*", "Zn24"}], "+", 
+    RowBox[{"Zn31", "*", "MNE3", "*", "Zn34"}], "+", 
+    RowBox[{"Zn41", "*", "MNE4", "*", "Zn44"}], "+", 
+    RowBox[{"Zn51", "*", "MNE5", "*", "Zn54"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM23", "=", 
+   RowBox[{
+    RowBox[{"Zn12", "*", "MNE1", "*", "Zn13"}], "+", 
+    RowBox[{"Zn22", "*", "MNE2", "*", "Zn23"}], "+", 
+    RowBox[{"Zn32", "*", "MNE3", "*", "Zn33"}], "+", 
+    RowBox[{"Zn42", "*", "MNE4", "*", "Zn43"}], "+", 
+    RowBox[{"Zn52", "*", "MNE5", "*", "Zn53"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NMM24", "=", 
+   RowBox[{
+    RowBox[{"Zn12", "*", "MNE1", "*", "Zn14"}], "+", 
+    RowBox[{"Zn22", "*", "MNE2", "*", "Zn24"}], "+", 
+    RowBox[{"Zn32", "*", "MNE3", "*", "Zn34"}], "+", 
+    RowBox[{"Zn42", "*", "MNE4", "*", "Zn44"}], "+", 
+    RowBox[{"Zn52", "*", "MNE5", "*", "Zn54"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5135836469767036`*^9, 3.5135837380703993`*^9}, {
+   3.513583772595314*^9, 3.513583882309696*^9}, {3.513584016952488*^9, 
+   3.5135840190960913`*^9}, {3.513584078876622*^9, 3.5135840913353233`*^9}, {
+   3.513584122675435*^9, 3.513584169481703*^9}, {3.5135842163039217`*^9, 
+   3.513584306751155*^9}, {3.513585964880622*^9, 3.513585970145347*^9}, {
+   3.513586003881968*^9, 3.5135860191445827`*^9}, {3.513586052876693*^9, 
+   3.513586052933565*^9}, {3.513586156274321*^9, 3.513586159632237*^9}, {
+   3.5135889634455547`*^9, 3.513589029573781*^9}, {3.513589064696995*^9, 
+   3.5135890844448013`*^9}, {3.5135894432811527`*^9, 3.513589448892878*^9}, {
+   3.513589484951519*^9, 3.513589505864162*^9}, {3.513589538715261*^9, 
+   3.513589589981276*^9}, 3.5135897049891853`*^9, {3.513589738012155*^9, 
+   3.5135897411768827`*^9}, {3.5135897842686157`*^9, 
+   3.5135897917424717`*^9}, {3.513589879195827*^9, 3.513589906204269*^9}, {
+   3.513592495801552*^9, 3.513592496675624*^9}, {3.513592908840249*^9, 
+   3.513593023486126*^9}, {3.5135930615131702`*^9, 3.5135930986766357`*^9}, {
+   3.513593207851222*^9, 3.5135932123468437`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Zn11i", "=", 
+   RowBox[{"Zn21i", "=", 
+    RowBox[{"Zn31i", "=", 
+     RowBox[{"Zn41i", "=", 
+      RowBox[{"Zn51i", "=", "0"}]}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.513580496985231*^9, 3.513580549073987*^9}, {
+  3.51358286930937*^9, 3.513582884574275*^9}, {3.5135863450113907`*^9, 
+  3.513586470594008*^9}, {3.51358951028491*^9, 3.513589511933631*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A2777", "=", 
+   RowBox[{
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21i", "*", "Zn11i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21r", "*", "Zn11r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21i", "*", "Zn21i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21r", "*", "Zn21r"}], 
+    "-", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11i", "*", "Zn31i"}], "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11r", "*", "Zn31r"}], "+", 
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21i", "*", "Zn51i"}], "-", 
+    
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21r", "*", "Zn51r"}], "+", 
+    
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41i", "*", "Zp11i"}], "+", 
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41r", "*", "Zp11r"}], "+", 
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11i", "*", "Zp21i"}], 
+    "+", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21i", "*", "Zp21i"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51i", "*", "Zp21i"}], "+", 
+    
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11r", "*", "Zp21r"}], 
+    "+", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21r", "*", "Zp21r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51r", "*", "Zp21r"}]}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"B2777", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "EE"}], "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21r", 
+     "*", "Zn11i"}], "-", 
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21i", "*", "Zn11r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21r", "*", "Zn21i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21i", "*", "Zn21r"}], 
+    "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11r", "*", "Zn31i"}], "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11i", "*", "Zn31r"}], "-", 
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21r", "*", "Zn51i"}], "-", 
+    
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21i", "*", "Zn51r"}], "+", 
+    
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41r", "*", "Zp11i"}], "-", 
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41i", "*", "Zp11r"}], "+", 
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11r", "*", "Zp21i"}], 
+    "+", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21r", "*", "Zp21i"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51r", "*", "Zp21i"}], "-", 
+    
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11i", "*", "Zp21r"}], 
+    "-", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21i", "*", "Zp21r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51i", "*", "Zp21r"}]}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"C2777", "=", 
+   RowBox[{
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21i", "*", "Zn11i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21r", "*", "Zn11r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21i", "*", "Zn21i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21r", "*", "Zn21r"}], 
+    "-", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11i", "*", "Zn31i"}], "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11r", "*", "Zn31r"}], "+", 
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21i", "*", "Zn51i"}], "-", 
+    
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21r", "*", "Zn51r"}], "-", 
+    
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41i", "*", "Zp11i"}], "-", 
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41r", "*", "Zp11r"}], "-", 
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11i", "*", "Zp21i"}], 
+    "-", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21i", "*", "Zp21i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51i", "*", "Zp21i"}], "-", 
+    
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11r", "*", "Zp21r"}], 
+    "-", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21r", "*", "Zp21r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51r", "*", "Zp21r"}]}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"D2777", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "EE"}], "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21r", 
+     "*", "Zn11i"}], "-", 
+    RowBox[{
+    "EE", "*", "sb", "*", "Sqrt2", "*", "SW", "*", "Zm21i", "*", "Zn11r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21r", "*", "Zn21i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "sb", "*", "Sqrt2", "*", "Zm21i", "*", "Zn21r"}], 
+    "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11r", "*", "Zn31i"}], "+", 
+    RowBox[{
+    "2", "*", "CW", "*", "EE", "*", "sb", "*", "Zm11i", "*", "Zn31r"}], "-", 
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21r", "*", "Zn51i"}], "-", 
+    
+    RowBox[{"cb", "*", "lam0", "*", "S2W", "*", "Zm21i", "*", "Zn51r"}], "-", 
+    
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41r", "*", "Zp11i"}], "+", 
+    RowBox[{
+    "2", "*", "cb", "*", "CW", "*", "EE", "*", "Zn41i", "*", "Zp11r"}], "-", 
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11r", "*", "Zp21i"}], 
+    "-", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21r", "*", "Zp21i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51r", "*", "Zp21i"}], "+", 
+    
+    RowBox[{
+    "cb", "*", "EE", "*", "Sqrt2", "*", "SW", "*", "Zn11i", "*", "Zp21r"}], 
+    "+", 
+    RowBox[{
+    "cb", "*", "CW", "*", "EE", "*", "Sqrt2", "*", "Zn21i", "*", "Zp21r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "sb", "*", "Zn51i", "*", "Zp21r"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"VertexOMA", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "1"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"2", "*", "S2W"}], ")"}]}], "*", 
+    RowBox[{"(", 
+     RowBox[{"A2777", "+", 
+      RowBox[{"B2777", "*", "I"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"C2777", "+", 
+         RowBox[{"D2777", "*", "I"}]}], ")"}], "*", "G5"}]}], ")"}]}]}], 
+  ";"}], "\n"}], "Input",
+ CellChangeTimes->{{3.513592258983304*^9, 3.513592360642918*^9}, 
+   3.5135925319044847`*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"S101", "=", 
+   RowBox[{
+    RowBox[{"NMM14", "*", "Zn11"}], "-", 
+    RowBox[{"NMM24", "*", "Zn12"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"S102", "=", 
+   RowBox[{
+    RowBox[{"NMM13", "*", "Zn11"}], "-", 
+    RowBox[{"NMM23", "*", "Zn12"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"V255", "=", 
+   RowBox[{
+    RowBox[{"cb", "*", "cb", "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", "*", "NMM24", "*", "Zn14", "*", "Zv11"}], "-", 
+       RowBox[{"Sqrt2", "*", "Zv12", "*", "S101"}]}], ")"}]}], "+", 
+    RowBox[{
+    "sb", "*", "sb", "*", "Sqrt2", "*", "NMM45", "*", "Zn15", "*", 
+     "Zv12"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V256", "=", 
+   RowBox[{
+    RowBox[{"sb", "*", "sb", "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "*", "NMM23", "*", "Zn13", "*", "Zu11"}], "-", 
+       RowBox[{"Sqrt2", "*", "Zu12", "*", "S102"}]}], ")"}]}], "+", 
+    RowBox[{
+    "cb", "*", "cb", "*", "Sqrt2", "*", "NMM35", "*", "Zn15", "*", 
+     "Zu12"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"VertexNMSSM", "=", 
+   RowBox[{
+    RowBox[{"EE", "/", 
+     RowBox[{"(", 
+      RowBox[{"4", "*", "sb", "*", "cb", "*", "SW", "*", "MW"}], ")"}]}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V255", "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "G5"}], ")"}]}], "+", 
+      RowBox[{"V256", "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "G5"}], ")"}]}]}], ")"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.513592413019223*^9, 3.513592475296392*^9}, {
+  3.51359313768218*^9, 3.5135931611767073`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexNMSSM", "//", "Expand"}]], "Input",
+ CellChangeTimes->{{3.51359253771985*^9, 3.5135925424658613`*^9}, {
+  3.5135931753318787`*^9, 3.513593177882689*^9}}],
+
+Cell[BoxData[
+ RowBox[{"0.\
+13211085506062473304473637457353185270328470045160047183233885268545395032795`\
+50.", "+", 
+  RowBox[{
+  "0.0404051894494614797770124409917201286032110078842490670326879097551515590\
+8477`50.", " ", "G5"}]}]], "Output",
+ CellChangeTimes->{{3.5135931664504433`*^9, 3.5135931786246777`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexOMA", "//", "Expand"}]], "Input",
+ CellChangeTimes->{{3.513592636987356*^9, 3.513592639004856*^9}, {
+  3.513593182067511*^9, 3.513593183601753*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "-", "0.24024295287044995569541687387070765542701493681238197465218854436147\
+876738106`50."}], "-", 
+  RowBox[{
+  "0.1623096395005990797545028491997424261324701245559781303877437571127363871\
+2151`50.", " ", "G5"}]}]], "Output",
+ CellChangeTimes->{{3.5135931681631393`*^9, 3.513593184130887*^9}, 
+   3.513593221654912*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.513592278759697*^9, 3.513592283380496*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"S127", "=", 
+   RowBox[{
+    RowBox[{"NMM14", "*", "Zn11"}], "+", 
+    RowBox[{"NMM24", "*", "Zn12"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"S128", "=", 
+   RowBox[{
+    RowBox[{"NMM13", "*", "Zn11"}], "+", 
+    RowBox[{"NMM23", "*", "Zn12"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"S349", "=", 
+   RowBox[{
+    RowBox[{"Zn14", "*", "S127"}], "+", 
+    RowBox[{"NMM35", "*", "Zn15", "*", "Zn13"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"S350", "=", 
+   RowBox[{
+    RowBox[{"Zn13", "*", "S128"}], "+", 
+    RowBox[{"NMM45", "*", "Zn15", "*", "Zn14"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"S537", "=", 
+   RowBox[{
+    RowBox[{"NMM55", "*", "Zn15", "*", "Zn15"}], "+", 
+    RowBox[{"2", "*", "NMM34", "*", "Zn14", "*", "Zn13"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V347", "=", 
+   RowBox[{
+    RowBox[{"2", "*", "xvev", "*", "EE", "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"sb", "*", "Zh11", "*", "S350"}], "+", 
+       RowBox[{"cb", "*", "Zh12", "*", "S349"}]}], ")"}]}], "+", 
+    RowBox[{
+    "cb", "*", "sb", "*", "MW", "*", "Sqrt2", "*", "Zh13", "*", "SW", "*", 
+     "S537"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"VertexNMSSM", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "1"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"2", "*", "xvev", "*", "sb", "*", "cb", "*", "SW", "*", "MW"}], 
+      ")"}]}], "*", "V347"}]}], ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.5135797559860888`*^9, 3.5135797559892406`*^9}, {
+   3.513580034422614*^9, 3.513580052811508*^9}, {3.5135803882324457`*^9, 
+   3.513580398297945*^9}, 3.513585599138626*^9, {3.5135898337474194`*^9, 
+   3.513589861051189*^9}, {3.513592490587947*^9, 3.513592492115657*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A2913", "=", 
+   RowBox[{
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH12", "*", "Zn11i", "*", "Zn31i"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH42", "*", "Zn11r", "*", "Zn31i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH12", "*", "Zn21i", "*", "Zn31i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH42", "*", "Zn21r", "*", "Zn31i"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH42", "*", "Zn11i", "*", "Zn31r"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH12", "*", "Zn11r", "*", "Zn31r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH42", "*", "Zn21i", "*", "Zn31r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH12", "*", "Zn21r", "*", "Zn31r"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH22", "*", "Zn11i", "*", "Zn41i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH52", "*", "Zn11r", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH22", "*", "Zn21i", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH52", "*", "Zn21r", "*", "Zn41i"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH32", "*", "Zn31i", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH62", "*", "Zn31r", "*", "Zn41i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH52", "*", "Zn11i", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH22", "*", "Zn11r", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH52", "*", "Zn21i", "*", "Zn41r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH22", "*", "Zn21r", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH62", "*", "Zn31i", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH32", "*", "Zn31r", "*", "Zn41r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH22", "*", "Zn31i", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH52", "*", "Zn31r", "*", "Zn51i"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH12", "*", "Zn41i", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH42", "*", "Zn41r", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"kap0", "*", "S2W", "*", "ZH32", "*", 
+     RowBox[{"Zn51i", "^", "2"}]}], "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH52", "*", "Zn31i", "*", "Zn51r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH22", "*", "Zn31r", "*", "Zn51r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH42", "*", "Zn41i", "*", "Zn51r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH12", "*", "Zn41r", "*", "Zn51r"}], 
+    "-", 
+    RowBox[{
+    "2", "*", "kap0", "*", "S2W", "*", "ZH62", "*", "Zn51i", "*", "Zn51r"}], 
+    "-", 
+    RowBox[{"kap0", "*", "S2W", "*", "ZH32", "*", 
+     RowBox[{"Zn51r", "^", "2"}]}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"B2913", "=", 
+   RowBox[{
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH42", "*", "Zn11i", "*", "Zn31i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH12", "*", "Zn11r", "*", "Zn31i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH42", "*", "Zn21i", "*", "Zn31i"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH12", "*", "Zn21r", "*", "Zn31i"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH12", "*", "Zn11i", "*", "Zn31r"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH42", "*", "Zn11r", "*", "Zn31r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH12", "*", "Zn21i", "*", "Zn31r"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH42", "*", "Zn21r", "*", "Zn31r"}], 
+    "-", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH52", "*", "Zn11i", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH22", "*", "Zn11r", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH52", "*", "Zn21i", "*", "Zn41i"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH22", "*", "Zn21r", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH62", "*", "Zn31i", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH32", "*", "Zn31r", "*", "Zn41i"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH22", "*", "Zn11i", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{
+    "EE", "*", "Sqrt2", "*", "SW", "*", "ZH52", "*", "Zn11r", "*", "Zn41r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH22", "*", "Zn21i", "*", "Zn41r"}], 
+    "-", 
+    RowBox[{
+    "CW", "*", "EE", "*", "Sqrt2", "*", "ZH52", "*", "Zn21r", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH32", "*", "Zn31i", "*", "Zn41r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH62", "*", "Zn31r", "*", "Zn41r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH52", "*", "Zn31i", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH22", "*", "Zn31r", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH42", "*", "Zn41i", "*", "Zn51i"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH12", "*", "Zn41r", "*", "Zn51i"}], 
+    "-", 
+    RowBox[{"kap0", "*", "S2W", "*", "ZH62", "*", 
+     RowBox[{"Zn51i", "^", "2"}]}], "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH22", "*", "Zn31i", "*", "Zn51r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH52", "*", "Zn31r", "*", "Zn51r"}], 
+    "+", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH12", "*", "Zn41i", "*", "Zn51r"}], 
+    "-", 
+    RowBox[{"lam0", "*", "S2W", "*", "ZH42", "*", "Zn41r", "*", "Zn51r"}], 
+    "-", 
+    RowBox[{
+    "2", "*", "kap0", "*", "S2W", "*", "ZH32", "*", "Zn51i", "*", "Zn51r"}], 
+    "+", 
+    RowBox[{"kap0", "*", "S2W", "*", "ZH62", "*", 
+     RowBox[{"Zn51r", "^", "2"}]}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"VertexOMA", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], "/", "S2W"}], 
+    RowBox[{"(", 
+     RowBox[{"A2913", "+", 
+      RowBox[{"B2913", "*", "I", "*", "G5"}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.513580239111557*^9, 3.513580239113967*^9}, {
+   3.513580348752556*^9, 3.513580381992798*^9}, {3.513580781176849*^9, 
+   3.513580783358234*^9}, 3.513585606030838*^9, {3.513588812129342*^9, 
+   3.5135888453623962`*^9}, {3.513589816435833*^9, 3.513589824294331*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["VertexOMA"], "Input",
+ CellChangeTimes->{{3.51358283414902*^9, 3.513582836923964*^9}, {
+  3.5135862054305143`*^9, 3.513586206620737*^9}, {3.5135890994571238`*^9, 
+  3.513589100607996*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  "0.0659957516866132752577528243510135476033537854120448549828777546111466767\
+0607`50."}]], "Output",
+ CellChangeTimes->{
+  3.513582837457576*^9, 3.513585654841775*^9, {3.513586193984767*^9, 
+   3.513586207078804*^9}, {3.5135890979235277`*^9, 3.513589101196794*^9}, {
+   3.513589519042572*^9, 3.513589630358431*^9}, {3.5135896691351223`*^9, 
+   3.5135896819812117`*^9}, {3.513589719430215*^9, 3.513589759018694*^9}, {
+   3.513589803513564*^9, 3.5135898083339977`*^9}, 3.513589866980813*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["VertexNMSSM"], "Input",
+ CellChangeTimes->{{3.513582899102528*^9, 3.513582902349222*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  "0.1502554000201233926410693851731167714909360288962940370090978603342101375\
+8176`50."}]], "Output",
+ CellChangeTimes->{
+  3.513582902918027*^9, 3.513585663062989*^9, 3.513586194949677*^9, 
+   3.513589102576926*^9, {3.5135895198067617`*^9, 3.51358968323251*^9}, {
+   3.513589867746648*^9, 3.5135898851813173`*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 756},
+WindowMargins->{{Automatic, 373}, {Automatic, 141}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 13, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 2147, 68, 313, "Input"],
+Cell[2707, 90, 9871, 265, 703, InheritFromParent],
+Cell[12581, 357, 399, 9, 27, "Input"],
+Cell[12983, 368, 6803, 189, 463, "Input"],
+Cell[19789, 559, 1633, 49, 88, "Input"],
+Cell[CellGroupData[{
+Cell[21447, 612, 183, 3, 27, "Input"],
+Cell[21633, 617, 317, 7, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21987, 629, 178, 3, 27, "Input"],
+Cell[22168, 634, 360, 9, 43, "Output"]
+}, Open  ]],
+Cell[22543, 646, 1059, 15, 628, "Input"],
+Cell[23605, 663, 1768, 49, 133, "Input"],
+Cell[25376, 714, 6573, 177, 493, "Input"],
+Cell[CellGroupData[{
+Cell[31974, 895, 202, 3, 27, "Input"],
+Cell[32179, 900, 521, 9, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32737, 914, 103, 1, 27, "Input"],
+Cell[32843, 917, 346, 7, 27, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

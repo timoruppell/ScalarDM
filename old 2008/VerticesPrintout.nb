@@ -1,0 +1,238 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      8535,        229]
+NotebookOptionsPosition[      7838,        205]
+NotebookOutlinePosition[      8389,        225]
+CellTagsIndexPosition[      8346,        222]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"From", " ", 
+  RowBox[{"LH2N", ":"}]}]], "Output"],
+
+Cell[BoxData[{
+ RowBox[{"NSe2", " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "2.0163767774225795`*^-6"}], " ", 
+  SuperscriptBox["\[Nu]3", "2"]}], "\[IndentingNewLine]", 
+ RowBox[{"+", 
+  RowBox[{
+  "0.334713289894146`", " ", "\[Nu]3", " ", 
+   "\[Chi]04"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"+", "2.0163767774225795`*^-6"}], " ", 
+   SuperscriptBox["\[Chi]04", "2"]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"NSo2", " "}], "\[IndentingNewLine]", 
+ RowBox[{"0.6422179293632997`", " ", "\[ImaginaryI]", " ", "\[Nu]3", " ", 
+  "\[Chi]01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "0.8374049096668637`"}], " ", "\[ImaginaryI]", " ", "\[Nu]3", 
+  " ", "\[Chi]02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "1.1983852640980681`"}], " ", "\[ImaginaryI]", " ", "\[Nu]3", 
+  " ", "\[Chi]03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.1326946093768376`"}], " ", "\[ImaginaryI]", " ", "\[Chi]01",
+   " ", "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "0.17302400368774334`"}], " ", "\[ImaginaryI]", " ", 
+  "\[Chi]02", " ", "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.2476095064180232`"}], " ", "\[ImaginaryI]", " ", "\[Chi]03",
+   " ", "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "0.5168249338379516`"}], " ", "\[ImaginaryI]", " ", "\[Nu]3", 
+  " ", "\[Chi]05"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "0.10678599829784823`"}], " ", "\[ImaginaryI]", " ", 
+  "\[Chi]04", " ", "\[Chi]05"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.24544478181795082`"}], " ", "\[ImaginaryI]", " ", "\[Nu]3", 
+  " ", "\[Chi]06"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.05071362532529339`"}], " ", "\[ImaginaryI]", " ", 
+  "\[Chi]04", " ", "\[Chi]06"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.8624961791106943`"}], " ", "\[ImaginaryI]", " ", "e", " ", 
+  "\[Chi]C1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.8624961791106943`"}], " ", "\[ImaginaryI]", " ", "\[Mu]", 
+  " ", "\[Chi]C1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.8624961791106943`"}], " ", "\[ImaginaryI]", " ", "\[Tau]", 
+  " ", "\[Chi]C1"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.46385250218856205`"}], " ", "\[ImaginaryI]", " ", "e", " ", 
+  "\[Chi]C2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.46385250218856205`"}], " ", "\[ImaginaryI]", " ", "\[Mu]", 
+  " ", "\[Chi]C2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.46385250218856205`"}], " ", "\[ImaginaryI]", " ", "\[Tau]", 
+  " ", "\[Chi]C2"}]}], "Output"],
+
+Cell[BoxData[
+ RowBox[{"From", " ", 
+  RowBox[{"N", "^", "2"}], " ", "S"}]], "Output"],
+
+Cell[BoxData[{
+ RowBox[{"NSe2", " "}], "\[IndentingNewLine]", 
+ RowBox[{"1.780189299367474432735402014`4.522878745280337*^-11", " ", 
+  "\[Kappa]2", " ", 
+  SuperscriptBox["\[Nu]3", "2"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "5.9101356821705855680568762192277`4.522878745280337*^-6"}], 
+  " ", "\[Kappa]2", " ", "\[Nu]3", " ", "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "+", "0.49053356002753434089836712864758611314`4.522878745280337"}], " ", 
+   "\[Kappa]2", " ", 
+   SuperscriptBox["\[Chi]04", "2"]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"NSo2", " ", 
+  "6.3554610415263846043290990752364`4.522878745280337*^-7", " ", 
+  "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Nu]3", " ", 
+  "\[Chi]01"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "8.9830530264060351726903273274671`4.522878745280337*^-7"}], 
+  " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Nu]3", " ", 
+  "\[Chi]02"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "2.9574041471430993669903718848771`4.522878745280337*^-7"}], 
+  " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Nu]3", " ", 
+  "\[Chi]03"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "0.10549899690868909811904810582891171382`4.522878745280342"}],
+   " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Chi]01", " ", 
+  "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.14911633904623726051602186114198097547`4.522878745280337"}],
+   " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Chi]02", " ", 
+  "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.04909213807441744226888159961625969912`4.522878745280342"}],
+   " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Chi]03", " ", 
+  "\[Chi]04"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "1.13603967328637950793377551364036`4.522878745280337*^-6"}], 
+   " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Nu]3", " ", "\[Chi]05"}], 
+  "+", "\[IndentingNewLine]", 
+  RowBox[{
+  "0.18857962498249131125458464686680482341`4.522878745280342", " ", 
+   "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Chi]04", " ", 
+   "\[Chi]05"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"-", "5.67592856327162591488625097168236`4.522878745280337*^-6"}], 
+  " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Nu]3", " ", 
+  "\[Chi]06"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"+", "0.94218934871594946451159513372199283787`4.522878745280337"}],
+   " ", "\[ImaginaryI]", " ", "\[Kappa]2", " ", "\[Chi]04", " ", 
+  "\[Chi]06"}]}], "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"From", " ", 
+   RowBox[{"S", "^", "3"}], " ", "only", " ", "NSe2"}], " ", "->", " ", 
+  RowBox[{"\[Chi]0i", " ", "\[Chi]0j"}]}]], "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"From", " ", "H1H2S", " ", "only", " ", "NSe2"}], " ", "->", " ", 
+  RowBox[{"\[Chi]0i", " ", 
+   RowBox[{"\[Chi]0j", " ", "/", " ", "\[Chi]Ci"}], " ", 
+   "\[Chi]Cj"}]}]], "Output"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Masses", ":", "\n", "\[Chi]C2"}], "=", 
+  "530.46039903232748442793274093542486863063`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]C1", "=", 
+  "376.21941719754964846336265406196528824797`3.9999999999999996"}], "\n", 
+ RowBox[{"\[Chi]06", "=", 
+  "614.3766955480311142505492508420496280758`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]05", "=", 
+  "527.66379741331534061022036841511249858525`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]04", "=", 
+  "500.00000001814543840111729079194975235903`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]03", "=", 
+  "407.09735573504608199288646087664177004789`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]02", "=", 
+  "387.00266099603892046711145254682791410197`3.9999999999999996"}], "\
+\[IndentingNewLine]", 
+ RowBox[{"\[Chi]01", "=", 
+  "328.05420177766068446054489656952092081224`3.9999999999999996"}], "\n", 
+ RowBox[{"SNe2", "=", 
+  RowBox[{"466.7", " ", 
+   RowBox[{"(", 
+    RowBox[{"=", 
+     RowBox[{
+      RowBox[{"0.037", " ", "h2"}], " ", "+", " ", 
+      RowBox[{"0.96", " ", "S"}]}]}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"SNo2", "=", 
+  RowBox[{
+  "194.85411454230869176552908484027845971603`3.9999999999999996", " ", 
+   RowBox[{"(", 
+    RowBox[{"=", " ", 
+     RowBox[{
+      RowBox[{"0.96", " ", "N"}], " ", "+", " ", 
+      RowBox[{"0.014", " ", 
+       RowBox[{"s\[Nu]", "[", "i", "]"}]}]}]}], ")"}]}]}]}], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+},
+WindowSize->{640, 750},
+WindowMargins->{{Automatic, 123}, {Automatic, 183}},
+PrintingPageRange->{Automatic, Automatic},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{594.25, 840.5},
+"PostScriptOutputFile"->"/home/ruppell/Math/New2/VerticesPrintout.ps"},
+FrontEndVersion->"6.0 for Linux x86 (64-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 74, 2, 31, "Output"],
+Cell[645, 25, 2608, 61, 454, "Output"],
+Cell[3256, 88, 86, 2, 31, "Output"],
+Cell[3345, 92, 2522, 55, 320, "Output"],
+Cell[5870, 149, 174, 4, 31, "Output"],
+Cell[6047, 155, 216, 5, 31, "Output"],
+Cell[6266, 162, 1568, 41, 232, "Output"]
+}
+]
+*)
+
+(* End of internal cache information *)

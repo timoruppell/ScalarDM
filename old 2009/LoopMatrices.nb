@@ -1,0 +1,5338 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[    186758,       5329]
+NotebookOptionsPosition[    185751,       5293]
+NotebookOutlinePosition[    186107,       5309]
+CellTagsIndexPosition[    186064,       5306]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LH1M", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Higgs1Mod", "/.", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+         RowBox[{
+          RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+        "}"}]}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"mbottom", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "mbottom"}]}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LH2M", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Higgs2Mod", "/.", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+         RowBox[{
+          RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+        "}"}]}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"mbottom", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "mbottom"}]}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LSM", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"SingletMod", "/.", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+         RowBox[{
+          RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+        "}"}]}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ",", 
+     RowBox[{
+      RowBox[{"mbottom", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "0"}], "&&", 
+      RowBox[{"mtop", ">", "mbottom"}]}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"LL1M", "=", 
+   RowBox[{"Left1Mod", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+     "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LL2M", "=", 
+   RowBox[{"Left2Mod", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+     "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LL3M", "=", 
+   RowBox[{"Left3Mod", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+     "}"}]}]}], ";", 
+  RowBox[{"LR3M", "=", 
+   RowBox[{"Right3Mod", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+     "}"}]}]}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Vac3L", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{"LH1M", "\[Equal]", "0"}], ",", "mH1"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{"LH2M", "\[Equal]", "0"}], ",", "mH2"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{"LSM", "\[Equal]", "0"}], ",", "MS"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"\[Sigma]\[Nu]", "[", "i_", "]"}], "\[Rule]", "0"}]}], 
+       "}"}]}], "}"}], "]"}]}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Loggs", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        SuperscriptBox["mbottom", "2"], 
+        SuperscriptBox["Rsc", "2"]], "]"}], "\[Rule]", "LogMB"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        SuperscriptBox["mtop", "2"], 
+        SuperscriptBox["Rsc", "2"]], "]"}], "\[Rule]", "LogMT"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["mbottom", "2"], "+", 
+         SuperscriptBox["mtop", "2"], "-", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "4"}], " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "2"]}], "+", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}], "2"]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "LogMB"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["mbottom", "2"], "+", 
+         SuperscriptBox["mtop", "2"], "+", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "4"}], " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "2"]}], "+", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}], "2"]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "LogMT"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MQ33", "2"], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], "+", 
+         SuperscriptBox["MU33", "2"], "-", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "-", 
+              SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Atop", " ", "v2"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], 
+                "v2"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log1"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MQ33", "2"], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], "+", 
+         SuperscriptBox["MU33", "2"], "+", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "-", 
+              SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Atop", " ", "v2"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], 
+                "v2"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log2"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], "+", 
+         SuperscriptBox["MD33", "2"], "+", 
+         SuperscriptBox["MQ33", "2"], "-", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Abtm", " ", "v1"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+                "v1"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log3"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], "+", 
+         SuperscriptBox["MD33", "2"], "+", 
+         SuperscriptBox["MQ33", "2"], "-", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MD33", "2"]}], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Abtm", " ", "v1"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+                "v1"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log3"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], "+", 
+         SuperscriptBox["MD33", "2"], "+", 
+         SuperscriptBox["MQ33", "2"], "+", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Abtm", " ", "v1"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+                "v1"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log4"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Log", "[", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], "+", 
+         SuperscriptBox["MD33", "2"], "+", 
+         SuperscriptBox["MQ33", "2"], "+", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MD33", "2"]}], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+           RowBox[{"4", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Abtm", " ", "v1"}], "-", 
+               FractionBox[
+                RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+                "v1"]}], ")"}], "2"]}]}]]}], 
+        RowBox[{"2", " ", 
+         SuperscriptBox["Rsc", "2"]}]], "]"}], "\[Rule]", "Log4"}]}], "}"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sroots", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["mbottom", "2"], "+", 
+        SuperscriptBox["mtop", "2"], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "4"}], " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["mbottom", "2"]}], "-", 
+             SuperscriptBox["mtop", "2"]}], ")"}], "2"]}]]}], ")"}], " ", 
+      "\[Rule]", 
+      RowBox[{"2", 
+       RowBox[{"mtop", "^", "2"}]}]}], " ", ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["mbottom", "2"], "+", 
+        SuperscriptBox["mtop", "2"], "-", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "4"}], " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["mbottom", "2"]}], "-", 
+             SuperscriptBox["mtop", "2"]}], ")"}], "2"]}]]}], ")"}], " ", 
+      "\[Rule]", 
+      RowBox[{"2", 
+       RowBox[{"mbottom", "^", "2"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["MQ33", "2"], "-", 
+           SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Atop", " ", "v2"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], "v2"]}],
+            ")"}], "2"]}]}]], "\[Rule]", "Sroot1"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["MD33", "2"], "-", 
+           SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "v1"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+             "v1"]}], ")"}], "2"]}]}]], "\[Rule]", "Sroot2"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            SuperscriptBox["MD33", "2"]}], "+", 
+           SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+        RowBox[{"4", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "v1"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+             "v1"]}], ")"}], "2"]}]}]], "\[Rule]", "Sroot2"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "-", 
+            SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+         RowBox[{"4", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Atop", " ", "v2"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], 
+              "v2"]}], ")"}], "2"]}]}]]}], "\[Rule]", 
+      RowBox[{"k", "/", "Sroot1"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "-", 
+            SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+         RowBox[{"4", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Atop", " ", "v2"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], 
+              "v2"]}], ")"}], "2"]}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"Sroot1", "^", "2"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["MQ33", "2"], "-", 
+             SuperscriptBox["MU33", "2"]}], ")"}], "2"], "+", 
+          RowBox[{"4", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Atop", " ", "v2"}], "-", 
+              FractionBox[
+               RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], 
+               "v2"]}], ")"}], "2"]}]}], ")"}], 
+        RowBox[{"3", "/", "2"}]]}], "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"Sroot1", "^", "3"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MD33", "2"], "-", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+         RowBox[{"4", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}]}]]}], "\[Rule]", 
+      RowBox[{"k", "/", "Sroot2"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["MD33", "2"]}], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+         RowBox[{"4", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}]}]]}], "\[Rule]", 
+      RowBox[{"k", "/", "Sroot2"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["MD33", "2"]}], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+         RowBox[{"4", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"Sroot2", "^", "2"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["MD33", "2"]}], "+", 
+             SuperscriptBox["MQ33", "2"]}], ")"}], "2"], "+", 
+          RowBox[{"4", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Abtm", " ", "v1"}], "-", 
+              FractionBox[
+               RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+               "v1"]}], ")"}], "2"]}]}], ")"}], 
+        RowBox[{"3", "/", "2"}]]}], "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"Sroot2", "^", "3"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "4"}], " ", 
+          SuperscriptBox["mbottom", "2"], " ", 
+          SuperscriptBox["mtop", "2"]}], "+", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["mbottom", "2"]}], "-", 
+            SuperscriptBox["mtop", "2"]}], ")"}], "2"]}]]}], "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"mtop", "^", "2"}], "-", 
+         RowBox[{"mbottom", "^", "2"}]}], ")"}]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "4"}], " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["mbottom", "2"]}], "-", 
+             SuperscriptBox["mtop", "2"]}], ")"}], "2"]}], ")"}], 
+        RowBox[{"3", "/", "2"}]]}], " ", "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"mtop", "^", "2"}], "-", 
+          RowBox[{"mbottom", "^", "2"}]}], ")"}], "^", "3"}]}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Factors", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["mbottom", "2"]}], "+", 
+         SuperscriptBox["mtop", "2"]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", "deltaMtb"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["mbottom", "2"]}], "+", 
+          SuperscriptBox["mtop", "2"]}], ")"}], "3"]}], " ", "\[Rule]", 
+      RowBox[{"k", "/", 
+       RowBox[{"deltaMtb", "^", "3"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+        FractionBox[
+         RowBox[{"4", " ", "Abtm", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "v1"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+             "v1"]}], ")"}]}], "Sroot2"]}], ")"}], "\[Rule]", "Factor1"}], 
+     ",", " ", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], "v1"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", "Abtm", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "v1"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+             "v1"]}], ")"}]}], "Sroot2"]}], ")"}], "\[Rule]", "Factor2"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["Abtm", "2"]}], "Sroot2"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{"16", " ", 
+          SuperscriptBox["Abtm", "2"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}], 
+         SuperscriptBox["Sroot2", "3"]]}], ")"}], "\[Rule]", "Factor3"}], ",",
+      "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"4", " ", 
+           SuperscriptBox["Abtm", "2"]}], "Sroot2"]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"16", " ", 
+          SuperscriptBox["Abtm", "2"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}], 
+         SuperscriptBox["Sroot2", "3"]]}], ")"}], "\[Rule]", "Factor4"}], ",",
+      "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], "v2"], "-", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Atop", " ", "v2"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], "v2"]}],
+            ")"}]}], "Sroot1"]}], ")"}], "\[Rule]", "Factor5"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], "v2"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Atop", " ", "v2"}], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], "v2"]}],
+            ")"}]}], "Sroot1"]}], ")"}], "\[Rule]", "Factor6"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+          "4", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "vevS"}], 
+          RowBox[{"Sroot2", " ", "v1"}]]}], "+", 
+        FractionBox[
+         RowBox[{
+         "16", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "vevS", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}], 
+         RowBox[{
+          SuperscriptBox["Sroot2", "3"], " ", "v1"}]]}], ")"}], "\[Rule]", 
+      "Factor7"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+         "4", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "vevS"}], 
+         RowBox[{"Sroot2", " ", "v1"}]], "-", 
+        FractionBox[
+         RowBox[{
+         "16", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "vevS", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Abtm", " ", "v1"}], "-", 
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], 
+              "v1"]}], ")"}], "2"]}], 
+         RowBox[{
+          SuperscriptBox["Sroot2", "3"], " ", "v1"}]]}], ")"}], "\[Rule]", 
+      RowBox[{"-", "Factor7"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Abtm", " ", "v1"}], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}], "v1"]}], 
+       ")"}], "\[Rule]", "Factor8"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Atop", " ", "v2"}], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}], "v2"]}], 
+       ")"}], "\[Rule]", "Factor9"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "Atop"}], " ", 
+         SuperscriptBox["v2", "2"]}], "+", 
+        RowBox[{"kappa0", " ", "mtop", " ", "v1", " ", "vevS"}]}], ")"}], 
+      "\[Rule]", 
+      RowBox[{
+       RowBox[{"-", "v2"}], "*", "Factor9"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "Abtm"}], " ", 
+         SuperscriptBox["v1", "2"]}], "+", 
+        RowBox[{"kappa0", " ", "mbottom", " ", "v2", " ", "vevS"}]}], ")"}], 
+      "\[Rule]", 
+      RowBox[{
+       RowBox[{"-", "v1"}], "*", "Factor8"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"4", " ", 
+           SuperscriptBox["Abtm", "2"]}], "Sroot2"]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "Factor10"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["Abtm", "2"]}], "Sroot2"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "Factor11"}], ",", 
+     " ", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"4", " ", 
+           SuperscriptBox["Atop", "2"]}], "Sroot1"]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Factor12"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["Atop", "2"]}], "Sroot1"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Factor13"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["mbottom", "4"], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mtop", "2"], " ", 
+          SuperscriptBox["vevS", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Factor14"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["Abtm", "2"]}], "-", 
+        FractionBox[
+         SuperscriptBox["mbottom", "4"], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MD33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            RowBox[{"2", " ", 
+             SuperscriptBox["MQ33", "2"]}], "+", 
+            RowBox[{"2", " ", 
+             SuperscriptBox["mtop", "2"]}], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mtop", "2"], " ", 
+          SuperscriptBox["vevS", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Factor15"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}]}], 
+          ")"}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", "Factor16"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}]}], 
+          ")"}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", "Factor17"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", 
+               SuperscriptBox["mbottom", "2"]}], "+", 
+              SuperscriptBox["MD33", "2"], "+", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}]}], 
+          ")"}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", "Factor18"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"k__", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["MQ33", "2"]}], "-", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "-", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              RowBox[{"2", " ", 
+               SuperscriptBox["mtop", "2"]}], "+", 
+              SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}]}], "+", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "2"}], " ", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["MD33", "2"], "-", 
+              SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}]}]}], 
+          ")"}]}], ")"}]}], "\[Rule]", 
+      RowBox[{"k", "/", "Factor19"}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Composites", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"8", " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], "v1"]}], "-", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["mbottom", "2"]}], "-", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], "v1"]}], ")"}], "\[Rule]",
+       
+      RowBox[{
+       RowBox[{"-", "4"}], 
+       RowBox[{"mbottom", "^", "2"}], 
+       RowBox[{"deltaMtb", "/", "v1"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"8", " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], "v2"]}], "-", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["mbottom", "2"]}], "-", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], "v2"]}], ")"}], "\[Rule]",
+       
+      RowBox[{"4", 
+       RowBox[{"mtop", "^", "2"}], 
+       RowBox[{"deltaMtb", "/", "v2"}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"8", " ", "Factor9", " ", "kappa0", " ", "mtop"}], "v2"]}], 
+        "+", 
+        FractionBox[
+         RowBox[{"8", " ", 
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mtop", "2"], " ", "v1", " ", "vevS"}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Composite1"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"8", " ", "Factor9", " ", "kappa0", " ", "mtop"}], "v2"], 
+        "+", 
+        FractionBox[
+         RowBox[{"8", " ", 
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mtop", "2"], " ", "v1", " ", "vevS"}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Composite2"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"4", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "v2"}],
+          
+         RowBox[{"Sroot2", " ", "v1"}]], "-", 
+        FractionBox[
+         RowBox[{"16", " ", "Abtm", " ", 
+          SuperscriptBox["Factor8", "2"], " ", "kappa0", " ", "mbottom", " ", 
+          "v2"}], 
+         RowBox[{
+          SuperscriptBox["Sroot2", "3"], " ", "v1"}]]}], ")"}], "\[Rule]", 
+      "Composite3"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+          "4", " ", "Abtm", " ", "kappa0", " ", "mbottom", " ", "v2"}], 
+          RowBox[{"Sroot2", " ", "v1"}]]}], "+", 
+        FractionBox[
+         RowBox[{"16", " ", "Abtm", " ", 
+          SuperscriptBox["Factor8", "2"], " ", "kappa0", " ", "mbottom", " ", 
+          "v2"}], 
+         RowBox[{
+          SuperscriptBox["Sroot2", "3"], " ", "v1"}]]}], ")"}], "\[Rule]", 
+      RowBox[{"-", "Composite3"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"16", " ", "Atop", " ", 
+          SuperscriptBox["Factor9", "2"], " ", "kappa0", " ", "mtop", " ", 
+          "vevS"}], 
+         RowBox[{
+          SuperscriptBox["Sroot1", "3"], " ", "v2"}]], "-", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+         
+         RowBox[{"Sroot1", " ", "v2"}]]}], ")"}], "\[Rule]", "Composite4"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"16", " ", "Atop", " ", 
+           SuperscriptBox["Factor9", "2"], " ", "kappa0", " ", "mtop", " ", 
+           "vevS"}], 
+          RowBox[{
+           SuperscriptBox["Sroot1", "3"], " ", "v2"}]]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+         
+         RowBox[{"Sroot1", " ", "v2"}]]}], ")"}], "\[Rule]", 
+      RowBox[{"-", "Composite4"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"16", " ", 
+          SuperscriptBox["Atop", "2"], " ", 
+          SuperscriptBox["Factor9", "2"]}], 
+         SuperscriptBox["Sroot1", "3"]], "-", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["Atop", "2"]}], "Sroot1"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Composite5"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"16", " ", 
+           SuperscriptBox["Atop", "2"], " ", 
+           SuperscriptBox["Factor9", "2"]}], 
+          SuperscriptBox["Sroot1", "3"]]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["Atop", "2"]}], "Sroot1"], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "Composite6"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"8", " ", "Factor8", " ", "kappa0", " ", "mbottom"}], 
+          "v1"]}], "+", 
+        FractionBox[
+         RowBox[{"8", " ", 
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mbottom", "2"], " ", "v2", " ", "vevS"}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "Composite7"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"8", " ", "Factor8", " ", "kappa0", " ", "mbottom"}], "v1"], 
+        "+", 
+        FractionBox[
+         RowBox[{"8", " ", 
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mbottom", "2"], " ", "v2", " ", "vevS"}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "Composite8"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"16", " ", "Atop", " ", 
+           SuperscriptBox["Factor9", "2"], " ", "kappa0", " ", "mtop", " ", 
+           "v1"}], 
+          RowBox[{
+           SuperscriptBox["Sroot1", "3"], " ", "v2"}]]}], "+", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", "kappa0", " ", "mtop", " ", "v1"}], 
+         RowBox[{"Sroot1", " ", "v2"}]]}], ")"}], "\[Rule]", "Composite9"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"16", " ", "Atop", " ", 
+          SuperscriptBox["Factor9", "2"], " ", "kappa0", " ", "mtop", " ", 
+          "v1"}], 
+         RowBox[{
+          SuperscriptBox["Sroot1", "3"], " ", "v2"}]], "-", 
+        FractionBox[
+         RowBox[{"4", " ", "Atop", " ", "kappa0", " ", "mtop", " ", "v1"}], 
+         RowBox[{"Sroot1", " ", "v2"}]]}], ")"}], "\[Rule]", 
+      RowBox[{"-", "Composite9"}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Masses", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          FractionBox[
+           RowBox[{"8", " ", 
+            SuperscriptBox["mbottom", "4"]}], 
+           SuperscriptBox["v1", "2"]], "-", 
+          FractionBox[
+           RowBox[{"8", " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "2"]}], 
+           SuperscriptBox["v1", "2"]], "-", 
+          FractionBox[
+           RowBox[{"4", " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}]}], 
+           SuperscriptBox["v1", "2"]]}], 
+         RowBox[{"2", " ", "deltaMtb"}]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "4"]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v1", "2"]}]]}], ")"}], "\[Rule]", "0"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mbottom", "4"]}], 
+            SuperscriptBox["v1", "2"]], "-", 
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v1", "2"]], "-", 
+           FractionBox[
+            RowBox[{"4", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["mbottom", "2"]}], "-", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v1", "2"]]}], 
+          RowBox[{"2", " ", "deltaMtb"}]]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mbottom", "4"]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v1", "2"]}]]}], ")"}], "\[Rule]", 
+      RowBox[{"4", 
+       RowBox[{
+        RowBox[{"mbottom", "^", "2"}], "/", 
+        RowBox[{"v1", "^", "2"}]}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"8", " ", 
+              SuperscriptBox["mbottom", "2"], " ", 
+              SuperscriptBox["mtop", "2"]}], 
+             SuperscriptBox["v2", "2"]]}], "+", 
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mtop", "4"]}], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"4", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["mbottom", "2"]}], "-", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]]}], 
+          RowBox[{"2", " ", "deltaMtb"}]]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "4"]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v2", "2"]}]]}], ")"}], "\[Rule]", "0"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v2", "2"]]}], "+", 
+          FractionBox[
+           RowBox[{"8", " ", 
+            SuperscriptBox["mtop", "4"]}], 
+           SuperscriptBox["v2", "2"]], "-", 
+          FractionBox[
+           RowBox[{"4", " ", 
+            SuperscriptBox["mtop", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}]}], 
+           SuperscriptBox["v2", "2"]]}], 
+         RowBox[{"2", " ", "deltaMtb"}]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox[
+         RowBox[{"4", " ", 
+          SuperscriptBox["mtop", "4"]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v2", "2"]}]]}], ")"}], "\[Rule]", 
+      RowBox[{"4", 
+       RowBox[{
+        RowBox[{"mtop", "^", "2"}], "/", 
+        RowBox[{"v2", "^", "2"}]}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v1", "2"]]}], "-", 
+          FractionBox[
+           RowBox[{"4", " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}]}], 
+           SuperscriptBox["v1", "2"]]}], 
+         RowBox[{"2", " ", "deltaMtb"}]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "0"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"8", " ", 
+              SuperscriptBox["mbottom", "2"], " ", 
+              SuperscriptBox["mtop", "2"]}], 
+             SuperscriptBox["v1", "2"]]}], "-", 
+           FractionBox[
+            RowBox[{"4", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["mbottom", "2"]}], "-", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v1", "2"]]}], 
+          RowBox[{"2", " ", "deltaMtb"}]]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", 
+      RowBox[{"4", 
+       RowBox[{
+        RowBox[{"mbottom", "^", "2"}], "/", 
+        RowBox[{"v1", "^", "2"}]}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"8", " ", 
+              SuperscriptBox["mbottom", "2"], " ", 
+              SuperscriptBox["mtop", "2"]}], 
+             SuperscriptBox["v2", "2"]]}], "-", 
+           FractionBox[
+            RowBox[{"4", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["mbottom", "2"]}], "-", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]]}], 
+          RowBox[{"2", " ", "deltaMtb"}]]}], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", "0"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"8", " ", 
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v2", "2"]]}], "-", 
+          FractionBox[
+           RowBox[{"4", " ", 
+            SuperscriptBox["mtop", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["mbottom", "2"]}], "-", 
+              SuperscriptBox["mtop", "2"]}], ")"}]}], 
+           SuperscriptBox["v2", "2"]]}], 
+         RowBox[{"2", " ", "deltaMtb"}]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]]}], ")"}], "\[Rule]", 
+      RowBox[{"4", 
+       RowBox[{
+        RowBox[{"mtop", "^", "2"}], "/", 
+        RowBox[{"v2", "^", "2"}]}]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["mbottom", "2"], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["mbottom", "2"]}], "-", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v1", "2"]}]]}], ")"}], "\[Rule]", 
+      RowBox[{"2", 
+       RowBox[{"mtop", "^", "2"}], 
+       RowBox[{
+        RowBox[{"mbottom", "^", "2"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"deltaMtb", " ", 
+          RowBox[{"v1", "^", "2"}]}], ")"}]}]}]}], ",", "\[IndentingNewLine]",
+      
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox["mbottom", "2"], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["mbottom", "2"]}], "-", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], 
+         RowBox[{"deltaMtb", " ", 
+          SuperscriptBox["v1", "2"]}]]}], ")"}], "\[Rule]", 
+      RowBox[{
+       RowBox[{"-", "2"}], 
+       RowBox[{
+        RowBox[{"mbottom", "^", "4"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"deltaMtb", " ", 
+          RowBox[{"v1", "^", "2"}]}], ")"}]}]}]}], ",", "\[IndentingNewLine]",
+      
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", " ", 
+         SuperscriptBox["mbottom", "2"]}], "+", 
+        SuperscriptBox["MD33", "2"], "+", 
+        SuperscriptBox["MQ33", "2"], "+", "Sroot2"}], ")"}], "\[Rule]", 
+      "MassB2p"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", " ", 
+         SuperscriptBox["mbottom", "2"]}], "+", 
+        SuperscriptBox["MD33", "2"], "+", 
+        SuperscriptBox["MQ33", "2"], "-", "Sroot2"}], ")"}], "\[Rule]", 
+      "MassB2m"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["MQ33", "2"], "+", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["mtop", "2"]}], "+", 
+        SuperscriptBox["MU33", "2"], "-", "Sroot1"}], ")"}], " ", "\[Rule]", 
+      "MassT1m"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["MQ33", "2"], "+", 
+        RowBox[{"2", " ", 
+         SuperscriptBox["mtop", "2"]}], "+", 
+        SuperscriptBox["MU33", "2"], "+", "Sroot1"}], ")"}], " ", "\[Rule]", 
+      "MassT1p"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Compounds", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"Factor8", " ", 
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v1"]}], 
+           ")"}]}], "v1"], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "Factor9"}], "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", "mtop", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["MQ33", "2"], "+", 
+                SuperscriptBox["mtop", "2"]}], ")"}]}], "v1"]}], ")"}], " ", 
+          "vevS"}], "v2"]}], ")"}], "\[Rule]", "Compound1"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mtop", "2"], "+", 
+                SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}], "v1"], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", "vevS", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"Factor9", " ", 
+              SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mtop", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["MQ33", "2"], "+", 
+                SuperscriptBox["mtop", "2"]}], ")"}], " ", "vevS"}], "v2"]}], 
+           ")"}]}], "v2"]}], ")"}], "\[Rule]", "Compound2"}], ",", 
+     RowBox[{
+      RowBox[{"Abtm", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["mbottom", "2"], "+", 
+             SuperscriptBox["MQ33", "2"]}], ")"}]}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v1"]}], 
+           ")"}]}], "+", 
+         RowBox[{"Factor8", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mtop", "2"], "+", 
+                SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}]}], ")"}]}], "\[Rule]", "Compound3"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Factor14", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "+", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Abtm", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}], "+", 
+           RowBox[{"Abtm", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mtop", "2"], "+", 
+              SuperscriptBox["MU33", "2"]}], ")"}]}], "-", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+           FractionBox[
+            RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v1"]}], 
+          ")"}]}], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["Factor9", "2"], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["MQ33", "2"]}], "-", 
+               RowBox[{"2", " ", 
+                SuperscriptBox["mtop", "2"]}], "-", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Abtm", " ", "Factor9"}], "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "mtop"}], "v1"], 
+            "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", "mtop", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["MQ33", "2"], "+", 
+                SuperscriptBox["mtop", "2"]}], ")"}]}], "v1"], "+", 
+            FractionBox[
+             RowBox[{"Factor8", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}], "v1"], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mtop", "2"], "+", 
+                SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}], "v1"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", "vevS", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"Factor9", " ", 
+              SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mtop", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["MQ33", "2"], "+", 
+                SuperscriptBox["mtop", "2"]}], ")"}], " ", "vevS"}], "v2"]}], 
+           ")"}]}], "v2"], "-", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mbottom", "2"]}], 
+             SuperscriptBox["v1", "2"]]}], "+", 
+           FractionBox[
+            RowBox[{"Abtm", " ", 
+             SuperscriptBox["mbottom", "2"]}], "v1"], "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             SuperscriptBox["mtop", "2"], " ", "vevS"}], 
+            RowBox[{"v1", " ", "v2"}]]}], ")"}]}]}], ")"}], "\[Rule]", 
+      "Compound4"}], ",", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Abtm", " ", "Factor9"}], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], "v1"]}], ")"}], "\[Rule]",
+       "Compound5"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Factor8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"Factor9", " ", 
+           SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+         FractionBox[
+          RowBox[{"kappa0", " ", "mtop", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["MQ33", "2"], "+", 
+             SuperscriptBox["mtop", "2"]}], ")"}], " ", "vevS"}], "v2"]}], 
+        ")"}]}], "\[Rule]", "Compound6"}], ",", "\[IndentingNewLine]", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mtop", "2"], "+", 
+           SuperscriptBox["MU33", "2"]}], ")"}]}], "-", 
+        FractionBox[
+         RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v1"]}], ")"}], 
+      "\[Rule]", "Compound7"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Factor8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["mtop", "2"], "+", 
+             SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+         FractionBox[
+          RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+          "v2"]}], ")"}]}], "\[Rule]", "Compound8"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "Atop"}], " ", "Factor9"}], "+", 
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["mtop", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mtop", "2"], "+", 
+                SuperscriptBox["MU33", "2"]}], ")"}]}], "v2"]}], ")"}]}], 
+         "v1"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "Atop"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], "+", 
+            FractionBox[
+             RowBox[{"Factor9", " ", 
+              SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}], " ", "vevS"}], 
+         "v2"], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Atop", " ", "Factor8"}], "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "mtop"}], "v2"], 
+            "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", "mtop", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["MQ33", "2"], "+", 
+                SuperscriptBox["mtop", "2"]}], ")"}]}], "v2"], "+", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "kappa0", " ", "mbottom", " ", "vevS"}], 
+             "v1"]}], ")"}]}], "v1"], "+", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v2"]}], "-", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"], "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}], " ", "vevS"}], "v1"], 
+           "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}], " ", "vevS"}], "v1"]}], 
+          ")"}]}], "-", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox[
+            RowBox[{"kappa0", " ", 
+             SuperscriptBox["mbottom", "3"], " ", "vevS"}], 
+            SuperscriptBox["v1", "2"]], "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             SuperscriptBox["mtop", "2"], " ", "vevS"}], 
+            SuperscriptBox["v2", "2"]]}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            RowBox[{"v1", " ", "v2"}]], "+", 
+           FractionBox[
+            RowBox[{"Atop", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+            "v2"]}], ")"}]}]}], ")"}], "\[Rule]", "Compound9"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "Atop"}], " ", "Factor9"}], "+", 
+             FractionBox[
+              RowBox[{
+               SuperscriptBox["mtop", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox["mtop", "2"], "+", 
+                 SuperscriptBox["MU33", "2"]}], ")"}]}], "v2"]}], ")"}]}], 
+          "v1"]}], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "Atop"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], "+", 
+            FractionBox[
+             RowBox[{"Factor9", " ", 
+              SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}], " ", "vevS"}], 
+         "v2"]}], ")"}], "\[Rule]", "Compound10"}], ",", 
+     RowBox[{
+      RowBox[{"Factor8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"kappa0", " ", "mtop", " ", "vevS", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"mbottom", " ", "mtop", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  SuperscriptBox["MQ33", "2"], "+", 
+                  SuperscriptBox["mtop", "2"]}], ")"}]}], "v2"]}], "+", 
+             FractionBox[
+              RowBox[{"Factor9", " ", "kappa0", " ", "mbottom", " ", "vevS"}],
+               "v1"]}], ")"}]}], "v2"], "-", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              FractionBox[
+               RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v2"]}], "+",
+              
+             FractionBox[
+              RowBox[{"kappa0", " ", "mbottom", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox["mtop", "2"], "+", 
+                 SuperscriptBox["MU33", "2"]}], ")"}], " ", "vevS"}], "v1"]}],
+             ")"}]}], "v1"]}], ")"}]}], "\[Rule]", "Compound11"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Factor8", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "Atop"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], "+", 
+         FractionBox[
+          RowBox[{"Factor9", " ", 
+           SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "\[Rule]", 
+      "Compound12"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"mbottom", " ", "mtop", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["MQ33", "2"], "+", 
+             SuperscriptBox["mtop", "2"]}], ")"}]}], "v2"]}], "+", 
+        FractionBox[
+         RowBox[{"Factor9", " ", "kappa0", " ", "mbottom", " ", "vevS"}], 
+         "v1"]}], ")"}], "\[Rule]", "Compound13"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           SuperscriptBox["mtop", "2"]}], 
+          RowBox[{"v1", " ", "v2"}]]}], "-", 
+        FractionBox[
+         RowBox[{"Abtm", " ", "kappa0", " ", "mbottom", " ", "vevS"}], "v1"], 
+        "-", 
+        FractionBox[
+         RowBox[{"Atop", " ", "kappa0", " ", "mtop", " ", "vevS"}], "v2"]}], 
+       ")"}], "\[Rule]", "Compound14"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Factor9", " ", "mbottom", " ", "mtop"}], "v2"]}], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}], " ", "vevS"}], "v1"]}], 
+       ")"}], "\[Rule]", "Compound15"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "Atop"}], " ", "Factor9"}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], "v2"]}], ")"}], "\[Rule]",
+       "Compound16"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["mtop", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 SuperscriptBox["mtop", "2"], "+", 
+                 SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+             FractionBox[
+              RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+              "v2"]}], ")"}]}], "v2"]}], "+", 
+        RowBox[{"Atop", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox[
+            RowBox[{"Factor9", " ", 
+             SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mtop", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", "vevS"}], "v2"]}], 
+          ")"}]}]}], ")"}], "\[Rule]", "Compound17"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"Atop", " ", "mbottom", " ", "mtop"}], "v1"], "+", 
+        FractionBox[
+         RowBox[{"Abtm", " ", 
+          SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}], "\[Rule]", 
+      "Compound18"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Atop", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"Factor9", " ", 
+           SuperscriptBox["mbottom", "2"]}], "v1"], "-", 
+         FractionBox[
+          RowBox[{"kappa0", " ", "mtop", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["MQ33", "2"], "+", 
+             SuperscriptBox["mtop", "2"]}], ")"}], " ", "vevS"}], "v2"]}], 
+        ")"}]}], "\[Rule]", "Compound19"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["Atop", "2"]}], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox[
+         SuperscriptBox["mtop", "4"], 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["MQ33", "2"]}], "-", 
+            RowBox[{"2", " ", 
+             SuperscriptBox["mtop", "2"]}], "-", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}], 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["kappa0", "2"], " ", 
+          SuperscriptBox["mbottom", "2"], " ", 
+          SuperscriptBox["vevS", "2"]}], 
+         SuperscriptBox["v1", "2"]]}], ")"}], "\[Rule]", "Compound20"}], ",", 
+     
+     RowBox[{
+      RowBox[{"Atop", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "Atop"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], "+", 
+         FractionBox[
+          RowBox[{"Factor9", " ", 
+           SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "\[Rule]", 
+      "Compound21"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["mbottom", "2"], "+", 
+         SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+       SuperscriptBox["mtop", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["MQ33", "2"], "+", 
+         SuperscriptBox["mtop", "2"]}], ")"}]}], "\[Rule]", "Compound22"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["mtop", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["Factor9", "2"]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mtop", "2"], "+", 
+            SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], "\[Rule]", 
+      "Compound23"}]}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Convergences", "=", 
+   RowBox[{"{", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "Compound19"}], "-", 
+        RowBox[{"Compound18", " ", "Factor8"}], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound7", "+", 
+            RowBox[{"Abtm", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}], "-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mbottom", "2"]}], "v1"]}], ")"}], " ", "vevS"}],
+          "v1"], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mbottom", "2"], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            RowBox[{"v1", " ", "v2"}]], "+", 
+           FractionBox[
+            RowBox[{"Atop", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+            "v2"]}], ")"}]}], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound5", "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "mtop"}], "v1"], 
+            "+", 
+            FractionBox[
+             RowBox[{"Factor8", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}], "v2"], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mtop", "2"], "+", 
+                SuperscriptBox["MU33", "2"]}], ")"}]}], "v1"], "-", 
+            FractionBox[
+             RowBox[{"Factor9", " ", "kappa0", " ", "mtop", " ", "vevS"}], 
+             "v2"]}], ")"}]}], "v2"]}], ")"}], "\[Rule]", "Converge1"}], ",", 
+     
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["Atop", "2"], "-", 
+           FractionBox[
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox[
+            SuperscriptBox["mtop", "4"], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["MQ33", "2"]}], "-", 
+               RowBox[{"2", " ", 
+                SuperscriptBox["mtop", "2"]}], "-", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]]}], ")"}]}], "-", 
+        RowBox[{"Atop", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "Atop"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["MQ33", "2"], "+", 
+              SuperscriptBox["mtop", "2"]}], ")"}]}], "+", 
+           FractionBox[
+            RowBox[{"Factor9", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "-", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["MQ33", "2"], "+", 
+            SuperscriptBox["mtop", "2"]}], ")"}]}], 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mtop", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["Factor9", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{"Compound16", " ", 
+          SuperscriptBox["mtop", "2"]}], "v2"], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound13", "+", 
+            RowBox[{"Atop", " ", "Factor8"}], "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "mtop"}], "v2"]}], 
+           ")"}]}], "v2"], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", "vevS", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound15", "-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mtop", "2"]}], "v2"], "+", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "vevS"}], "v1"]}], 
+           ")"}]}], "v1"], "-", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mtop", "2"]}], 
+             SuperscriptBox["v2", "2"]]}], "+", 
+           FractionBox[
+            RowBox[{"Atop", " ", "mbottom", " ", "mtop"}], "v2"], "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             SuperscriptBox["mtop", "2"], " ", "vevS"}], 
+            RowBox[{"v1", " ", "v2"}]]}], ")"}]}]}], ")"}], "\[Rule]", 
+      "Converge2"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "Compound21"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["Atop", "2"], "-", 
+           FractionBox[
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+             SuperscriptBox["mtop", "2"]}], 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox[
+            SuperscriptBox["mtop", "4"], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox[
+            RowBox[{
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["MQ33", "2"]}], "-", 
+               RowBox[{"2", " ", 
+                SuperscriptBox["mtop", "2"]}], "-", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]]}], ")"}]}], "-", 
+        FractionBox["Compound22", 
+         SuperscriptBox["v2", "2"]], "-", 
+        FractionBox["Compound23", 
+         SuperscriptBox["v2", "2"]], "+", 
+        FractionBox[
+         RowBox[{"Compound16", " ", 
+          SuperscriptBox["mtop", "2"]}], "v2"], "-", 
+        FractionBox[
+         RowBox[{"mbottom", " ", "mtop", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound13", "+", 
+            RowBox[{"Atop", " ", "Factor8"}], "-", 
+            FractionBox[
+             RowBox[{"mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "mtop"}], "v2"]}], 
+           ")"}]}], "v2"], "+", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", "vevS", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound15", "-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mtop", "2"]}], "v2"], "+", 
+            FractionBox[
+             RowBox[{"kappa0", " ", "mbottom", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                SuperscriptBox["mbottom", "2"], "+", 
+                SuperscriptBox["MQ33", "2"]}], ")"}], " ", "vevS"}], "v1"]}], 
+           ")"}]}], "v1"], "-", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"Factor8", " ", 
+              SuperscriptBox["mtop", "2"]}], 
+             SuperscriptBox["v2", "2"]]}], "+", 
+           FractionBox[
+            RowBox[{"Atop", " ", "mbottom", " ", "mtop"}], "v2"], "+", 
+           FractionBox[
+            RowBox[{"kappa0", " ", "mbottom", " ", 
+             SuperscriptBox["mtop", "2"], " ", "vevS"}], 
+            RowBox[{"v1", " ", "v2"}]]}], ")"}]}]}], ")"}], "\[Rule]", 
+      "Converge3"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge3", " ", "MassB2m"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound20", " ", 
+          SuperscriptBox["MassB2m", "2"]}], "4"], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound13"}], "+", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound15", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound21", "+", 
+           FractionBox["Compound22", 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox["Compound23", 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound16", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassB2m", "3"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v2", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Compound16", " ", "Factor8"}], "-", 
+            RowBox[{"Compound15", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge4", "-", 
+       FractionBox[
+        RowBox[{"Converge3", " ", "MassB2m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound20", " ", 
+         SuperscriptBox["MassB2m", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassB2m", "3"], " ", 
+         SuperscriptBox["mtop", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v2", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge3", " ", "MassB2p"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound20", " ", 
+          SuperscriptBox["MassB2p", "2"]}], "4"], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound13"}], "+", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound15", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound21", "+", 
+           FractionBox["Compound22", 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox["Compound23", 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound16", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassB2p", "3"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v2", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Compound16", " ", "Factor8"}], "-", 
+            RowBox[{"Compound15", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge4", "-", 
+       FractionBox[
+        RowBox[{"Converge3", " ", "MassB2p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound20", " ", 
+         SuperscriptBox["MassB2p", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassB2p", "3"], " ", 
+         SuperscriptBox["mtop", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v2", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge3", " ", "MassT1m"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound20", " ", 
+          SuperscriptBox["MassT1m", "2"]}], "4"], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound13"}], "+", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound15", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound21", "+", 
+           FractionBox["Compound22", 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox["Compound23", 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound16", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassT1m", "3"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v2", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Compound16", " ", "Factor8"}], "-", 
+            RowBox[{"Compound15", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge4", "-", 
+       FractionBox[
+        RowBox[{"Converge3", " ", "MassT1m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound20", " ", 
+         SuperscriptBox["MassT1m", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassT1m", "3"], " ", 
+         SuperscriptBox["mtop", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v2", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge3", " ", "MassT1p"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound20", " ", 
+          SuperscriptBox["MassT1p", "2"]}], "4"], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound13"}], "+", 
+           FractionBox[
+            RowBox[{"Factor8", " ", 
+             SuperscriptBox["mtop", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}]}], 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound15", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound21", "+", 
+           FractionBox["Compound22", 
+            SuperscriptBox["v2", "2"]], "+", 
+           FractionBox["Compound23", 
+            SuperscriptBox["v2", "2"]], "-", 
+           FractionBox[
+            RowBox[{"Compound16", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassT1p", "3"], " ", 
+          SuperscriptBox["mtop", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v2", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Compound16", " ", "Factor8"}], "-", 
+            RowBox[{"Compound15", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge4", "-", 
+       FractionBox[
+        RowBox[{"Converge3", " ", "MassT1p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound20", " ", 
+         SuperscriptBox["MassT1p", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassT1p", "3"], " ", 
+         SuperscriptBox["mtop", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v2", "2"]}]]}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Compound11", "-", 
+        FractionBox[
+         RowBox[{"Compound9", " ", "MassB2m"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassB2m", "2"]}], "4"], "-", 
+        RowBox[{"Compound10", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Compound16", " ", "Factor8"}], "-", 
+           RowBox[{"Compound15", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge5", "-", 
+       FractionBox[
+        RowBox[{"Compound9", " ", "MassB2m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassB2m", "2"]}], "4"]}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Compound11", "-", 
+        FractionBox[
+         RowBox[{"Compound9", " ", "MassB2p"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassB2p", "2"]}], "4"], "-", 
+        RowBox[{"Compound10", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Compound16", " ", "Factor8"}], "-", 
+           RowBox[{"Compound15", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge5", "-", 
+       FractionBox[
+        RowBox[{"Compound9", " ", "MassB2p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassB2p", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Compound11", "-", 
+        FractionBox[
+         RowBox[{"Compound9", " ", "MassT1m"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassT1m", "2"]}], "4"], "-", 
+        RowBox[{"Compound10", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Compound16", " ", "Factor8"}], "-", 
+           RowBox[{"Compound15", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge5", "-", 
+       FractionBox[
+        RowBox[{"Compound9", " ", "MassT1m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassT1m", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Compound11", "-", 
+        FractionBox[
+         RowBox[{"Compound9", " ", "MassT1p"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassT1p", "2"]}], "4"], "-", 
+        RowBox[{"Compound10", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Compound16", " ", "Factor8"}], "-", 
+           RowBox[{"Compound15", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound12", "-", 
+            RowBox[{"Compound13", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge5", "-", 
+       FractionBox[
+        RowBox[{"Compound9", " ", "MassT1p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassT1p", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Compound1", " ", "Factor8"}], "-", 
+        FractionBox[
+         RowBox[{"Compound4", " ", "MassB2m"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Factor15", " ", 
+          SuperscriptBox["MassB2m", "2"]}], "4"], "-", 
+        RowBox[{"Compound2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound8", "-", 
+           RowBox[{"Compound7", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassB2m", "3"], " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v1", "2"]}]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["Factor9", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge6", "-", 
+       FractionBox[
+        RowBox[{"Compound4", " ", "MassB2m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Factor15", " ", 
+         SuperscriptBox["MassB2m", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassB2m", "3"], " ", 
+         SuperscriptBox["mbottom", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v1", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Compound1", " ", "Factor8"}], "-", 
+        FractionBox[
+         RowBox[{"Compound4", " ", "MassB2p"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Factor15", " ", 
+          SuperscriptBox["MassB2p", "2"]}], "4"], "-", 
+        RowBox[{"Compound2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound8", "-", 
+           RowBox[{"Compound7", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassB2p", "3"], " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v1", "2"]}]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["Factor9", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge6", "-", 
+       FractionBox[
+        RowBox[{"Compound4", " ", "MassB2p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Factor15", " ", 
+         SuperscriptBox["MassB2p", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassB2p", "3"], " ", 
+         SuperscriptBox["mbottom", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v1", "2"]}]]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Compound1", " ", "Factor8"}], "-", 
+        FractionBox[
+         RowBox[{"Compound4", " ", "MassT1m"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Factor15", " ", 
+          SuperscriptBox["MassT1m", "2"]}], "4"], "-", 
+        RowBox[{"Compound2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound8", "-", 
+           RowBox[{"Compound7", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassT1m", "3"], " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v1", "2"]}]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["Factor9", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge6", "-", 
+       FractionBox[
+        RowBox[{"Compound4", " ", "MassT1m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Factor15", " ", 
+         SuperscriptBox["MassT1m", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassT1m", "3"], " ", 
+         SuperscriptBox["mbottom", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v1", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Compound1", " ", "Factor8"}], "-", 
+        FractionBox[
+         RowBox[{"Compound4", " ", "MassT1p"}], "2"], "-", 
+        FractionBox[
+         RowBox[{"Factor15", " ", 
+          SuperscriptBox["MassT1p", "2"]}], "4"], "-", 
+        RowBox[{"Compound2", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "-", 
+        RowBox[{"Abtm", " ", 
+         RowBox[{"(", 
+          RowBox[{"Compound8", "-", 
+           RowBox[{"Compound7", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              SuperscriptBox["mbottom", "2"], "+", 
+              SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["MassT1p", "3"], " ", 
+          SuperscriptBox["mbottom", "2"]}], 
+         RowBox[{"4", " ", 
+          SuperscriptBox["v1", "2"]}]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["mbottom", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["mbottom", "2"], "+", 
+            SuperscriptBox["MQ33", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["Factor9", "2"]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["MQ33", "2"], "+", 
+               SuperscriptBox["mtop", "2"]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mtop", "2"], "+", 
+               SuperscriptBox["MU33", "2"]}], ")"}]}]}], ")"}]}], 
+         SuperscriptBox["v1", "2"]], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge6", "-", 
+       FractionBox[
+        RowBox[{"Compound4", " ", "MassT1p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Factor15", " ", 
+         SuperscriptBox["MassT1p", "2"]}], "4"], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["MassT1p", "3"], " ", 
+         SuperscriptBox["mbottom", "2"]}], 
+        RowBox[{"4", " ", 
+         SuperscriptBox["v1", "2"]}]]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge1", " ", "MassB2m"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassB2m", "2"]}], "4"], "-", 
+        RowBox[{"Compound17", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound5"}], "-", 
+           FractionBox[
+            RowBox[{"Compound7", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound8", "-", 
+            RowBox[{"Compound7", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge7", "-", 
+       FractionBox[
+        RowBox[{"Converge1", " ", "MassB2m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassB2m", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge1", " ", "MassB2p"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassB2p", "2"]}], "4"], "-", 
+        RowBox[{"Compound17", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound5"}], "-", 
+           FractionBox[
+            RowBox[{"Compound7", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound8", "-", 
+            RowBox[{"Compound7", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge7", "-", 
+       FractionBox[
+        RowBox[{"Converge1", " ", "MassB2p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassB2p", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge1", " ", "MassT1m"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassT1m", "2"]}], "4"], "-", 
+        RowBox[{"Compound17", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound5"}], "-", 
+           FractionBox[
+            RowBox[{"Compound7", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound8", "-", 
+            RowBox[{"Compound7", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge7", "-", 
+       FractionBox[
+        RowBox[{"Converge1", " ", "MassT1m"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassT1m", "2"]}], "4"]}]}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"Converge1", " ", "MassT1p"}], "2"]}], "-", 
+        FractionBox[
+         RowBox[{"Compound14", " ", 
+          SuperscriptBox["MassT1p", "2"]}], "4"], "-", 
+        RowBox[{"Compound17", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mbottom", "2"], "+", 
+           SuperscriptBox["MD33", "2"]}], ")"}]}], "+", 
+        RowBox[{"Factor8", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Atop", " ", "Compound5"}], "-", 
+           FractionBox[
+            RowBox[{"Compound7", " ", 
+             SuperscriptBox["mtop", "2"]}], "v2"]}], ")"}]}], "+", 
+        FractionBox[
+         RowBox[{"mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound6", "-", 
+            RowBox[{"Compound5", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "mtop"}],
+          "v2"], "-", 
+        FractionBox[
+         RowBox[{"kappa0", " ", "mbottom", " ", 
+          RowBox[{"(", 
+           RowBox[{"Compound8", "-", 
+            RowBox[{"Compound7", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mbottom", "2"], "+", 
+               SuperscriptBox["MQ33", "2"]}], ")"}]}]}], ")"}], " ", "vevS"}],
+          "v1"]}], ")"}], "\[Rule]", 
+      RowBox[{"Converge7", "-", 
+       FractionBox[
+        RowBox[{"Converge1", " ", "MassT1p"}], "2"], "-", 
+       FractionBox[
+        RowBox[{"Compound14", " ", 
+         SuperscriptBox["MassT1p", "2"]}], "4"]}]}]}], "}"}]}], 
+  ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Reps", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "Loggs", ",", "Sroots", ",", "Factors", ",", "Composites", ",", "Masses",
+       ",", "Compounds", ",", "Convergences"}], "}"}], "]"}]}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mNeutEven", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Mneut", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}], "]"}], "/.", 
+      "Vac3L"}], ")"}], "+", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Mne1l", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}], "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[Sigma]\[Nu]", "[", "_", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ")"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"mNeutOdd", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Mneut", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "5", ",", "6"}], "}"}]}], "]"}], "]"}], "/.", 
+      "Vac3L"}], ")"}], "+", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Mne1l", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "5", ",", "6"}], "}"}]}], "]"}], "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[Sigma]\[Nu]", "[", "_", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ")"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"mChar", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Mchar", "/.", "Vac3L"}], ")"}], "+", 
+    RowBox[{"(", 
+     RowBox[{"Mch1l", "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[Sigma]\[Nu]", "[", "_", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+        RowBox[{"Ybtm", "\[Rule]", 
+         RowBox[{"mbottom", "/", "v1"}]}], ",", 
+        RowBox[{"Ytop", "\[Rule]", 
+         RowBox[{"mtop", "/", "v2"}]}]}], "}"}]}], ")"}]}]}], ";"}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mChar", "//.", "Reps"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"16", " ", 
+         SuperscriptBox["\[Pi]", "2"]}]], 
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log3"}], ")"}], " ", "MassB2m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge6", "-", 
+              FractionBox[
+               RowBox[{"Compound4", " ", "MassB2m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Factor15", " ", 
+                SuperscriptBox["MassB2m", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassB2m", "3"], " ", 
+                SuperscriptBox["mbottom", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v1", "2"]}]]}], ")"}]}], "Factor18"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log4"}], ")"}], " ", "MassB2p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge6", "-", 
+              FractionBox[
+               RowBox[{"Compound4", " ", "MassB2p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Factor15", " ", 
+                SuperscriptBox["MassB2p", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassB2p", "3"], " ", 
+                SuperscriptBox["mbottom", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v1", "2"]}]]}], ")"}]}], "Factor17"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log1"}], ")"}], " ", "MassT1m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge6", "-", 
+              FractionBox[
+               RowBox[{"Compound4", " ", "MassT1m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Factor15", " ", 
+                SuperscriptBox["MassT1m", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassT1m", "3"], " ", 
+                SuperscriptBox["mbottom", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v1", "2"]}]]}], ")"}]}], "Factor16"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log2"}], ")"}], " ", "MassT1p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge6", "-", 
+              FractionBox[
+               RowBox[{"Compound4", " ", "MassT1p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Factor15", " ", 
+                SuperscriptBox["MassT1p", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassT1p", "3"], " ", 
+                SuperscriptBox["mbottom", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v1", "2"]}]]}], ")"}]}], "Factor19"], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMB"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "6"]}], 
+           RowBox[{"deltaMtb", " ", 
+            SuperscriptBox["v1", "2"]}]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMT"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "4"]}], 
+           RowBox[{"deltaMtb", " ", 
+            SuperscriptBox["v1", "2"]}]]}], ")"}]}]}], "+", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["g2", "2"], " ", 
+        SuperscriptBox["v1", "2"]}], "2"], "-", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g2", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          SuperscriptBox["v1", "2"], "2"], "-", 
+         FractionBox[
+          SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           SuperscriptBox["v1", "2"], "2"]}], "+", 
+         FractionBox[
+          SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["kappa0", "2"], " ", 
+       SuperscriptBox["vevS", "2"]}], "+", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"64", " ", "v1"}]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "16"}], " ", 
+          SuperscriptBox["g1", "2"], " ", "v1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["v1", "2"], "-", 
+            SuperscriptBox["v2", "2"]}], ")"}]}], "-", 
+         RowBox[{"16", " ", 
+          SuperscriptBox["g2", "2"], " ", "v1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["v1", "2"], "-", 
+            SuperscriptBox["v2", "2"]}], ")"}]}], "+", 
+         RowBox[{"64", " ", "A0", " ", "v2", " ", "vevS"}], "-", 
+         RowBox[{"64", " ", 
+          SuperscriptBox["kappa0", "2"], " ", "v1", " ", 
+          SuperscriptBox["vevS", "2"]}], "-", 
+         RowBox[{
+          FractionBox["1", 
+           RowBox[{"4", " ", 
+            SuperscriptBox["\[Pi]", "2"]}]], 
+          RowBox[{"3", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Factor1", " ", "MassB2m"}], "+", 
+             RowBox[{"2", " ", "Factor1", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", 
+                 FractionBox["3", "2"]}], "+", "Log3"}], ")"}], " ", 
+              "MassB2m"}], "+", 
+             RowBox[{"Factor2", " ", "MassB2p"}], "+", 
+             RowBox[{"2", " ", "Factor2", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", 
+                 FractionBox["3", "2"]}], "+", "Log4"}], ")"}], " ", 
+              "MassB2p"}], "-", 
+             FractionBox[
+              RowBox[{"16", " ", 
+               SuperscriptBox["mbottom", "4"]}], "v1"], "-", 
+             FractionBox[
+              RowBox[{"16", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "LogMB"}]}], ")"}], " ", 
+               SuperscriptBox["mbottom", "4"]}], "v1"], "+", 
+             FractionBox[
+              RowBox[{
+              "4", " ", "Factor9", " ", "kappa0", " ", "MassT1m", " ", "mtop",
+                " ", "vevS"}], 
+              RowBox[{"Sroot1", " ", "v2"}]], "+", 
+             FractionBox[
+              RowBox[{"4", " ", "Factor9", " ", "kappa0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "Log1"}]}], ")"}], " ", "MassT1m", " ", 
+               "mtop", " ", "vevS"}], 
+              RowBox[{"Sroot1", " ", "v2"}]], "-", 
+             FractionBox[
+              RowBox[{
+              "4", " ", "Factor9", " ", "kappa0", " ", "MassT1p", " ", "mtop",
+                " ", "vevS"}], 
+              RowBox[{"Sroot1", " ", "v2"}]], "-", 
+             FractionBox[
+              RowBox[{"4", " ", "Factor9", " ", "kappa0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "Log2"}]}], ")"}], " ", "MassT1p", " ", 
+               "mtop", " ", "vevS"}], 
+              RowBox[{"Sroot1", " ", "v2"}]]}], ")"}]}]}], "-", 
+         RowBox[{"64", " ", "kappa0", " ", "v2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"kappa0", " ", "v1", " ", "v2"}], "-", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["vevS", "2"]}]}], ")"}]}]}], ")"}]}]}], ",", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"16", " ", 
+         SuperscriptBox["\[Pi]", "2"]}]], 
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log3"}], ")"}], " ", "MassB2m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge5", "-", 
+              FractionBox[
+               RowBox[{"Compound9", " ", "MassB2m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassB2m", "2"]}], "4"]}], ")"}]}], 
+           "Factor18"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log4"}], ")"}], " ", "MassB2p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge5", "-", 
+              FractionBox[
+               RowBox[{"Compound9", " ", "MassB2p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassB2p", "2"]}], "4"]}], ")"}]}], 
+           "Factor17"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log1"}], ")"}], " ", "MassT1m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge5", "-", 
+              FractionBox[
+               RowBox[{"Compound9", " ", "MassT1m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassT1m", "2"]}], "4"]}], ")"}]}], 
+           "Factor16"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log2"}], ")"}], " ", "MassT1p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge5", "-", 
+              FractionBox[
+               RowBox[{"Compound9", " ", "MassT1p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassT1p", "2"]}], "4"]}], ")"}]}], 
+           "Factor19"], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMB"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "4"], " ", 
+            SuperscriptBox["mtop", "2"]}], 
+           RowBox[{"deltaMtb", " ", "v1", " ", "v2"}]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMT"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "4"]}], 
+           RowBox[{"deltaMtb", " ", "v1", " ", "v2"}]]}], ")"}]}]}], "+", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g2", "2"], " ", "v1", " ", "v2"}], "+", 
+      RowBox[{"A0", " ", "vevS"}], "+", 
+      RowBox[{"kappa0", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+         RowBox[{"kappa3", " ", 
+          SuperscriptBox["vevS", "2"]}]}], ")"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"16", " ", 
+         SuperscriptBox["\[Pi]", "2"]}]], 
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log3"}], ")"}], " ", "MassB2m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge7", "-", 
+              FractionBox[
+               RowBox[{"Converge1", " ", "MassB2m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassB2m", "2"]}], "4"]}], ")"}]}], 
+           "Factor18"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log4"}], ")"}], " ", "MassB2p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge7", "-", 
+              FractionBox[
+               RowBox[{"Converge1", " ", "MassB2p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassB2p", "2"]}], "4"]}], ")"}]}], 
+           "Factor17"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log1"}], ")"}], " ", "MassT1m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge7", "-", 
+              FractionBox[
+               RowBox[{"Converge1", " ", "MassT1m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassT1m", "2"]}], "4"]}], ")"}]}], 
+           "Factor16"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log2"}], ")"}], " ", "MassT1p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge7", "-", 
+              FractionBox[
+               RowBox[{"Converge1", " ", "MassT1p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound14", " ", 
+                SuperscriptBox["MassT1p", "2"]}], "4"]}], ")"}]}], 
+           "Factor19"], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMB"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "4"], " ", 
+            SuperscriptBox["mtop", "2"]}], 
+           RowBox[{"deltaMtb", " ", "v1", " ", "v2"}]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "LogMT"}], ")"}], " ", 
+            SuperscriptBox["mbottom", "2"], " ", 
+            SuperscriptBox["mtop", "4"]}], 
+           RowBox[{"deltaMtb", " ", "v1", " ", "v2"}]]}], ")"}]}]}], "+", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g2", "2"], " ", "v1", " ", "v2"}], "+", 
+      RowBox[{"A0", " ", "vevS"}], "+", 
+      RowBox[{"kappa0", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+         RowBox[{"kappa3", " ", 
+          SuperscriptBox["vevS", "2"]}]}], ")"}]}]}], ",", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"16", " ", 
+         SuperscriptBox["\[Pi]", "2"]}]], 
+       RowBox[{"3", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log3"}], ")"}], " ", "MassB2m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge4", "-", 
+              FractionBox[
+               RowBox[{"Converge3", " ", "MassB2m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound20", " ", 
+                SuperscriptBox["MassB2m", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassB2m", "3"], " ", 
+                SuperscriptBox["mtop", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v2", "2"]}]]}], ")"}]}], "Factor18"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log4"}], ")"}], " ", "MassB2p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge4", "-", 
+              FractionBox[
+               RowBox[{"Converge3", " ", "MassB2p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound20", " ", 
+                SuperscriptBox["MassB2p", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassB2p", "3"], " ", 
+                SuperscriptBox["mtop", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v2", "2"]}]]}], ")"}]}], "Factor17"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log1"}], ")"}], " ", "MassT1m", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge4", "-", 
+              FractionBox[
+               RowBox[{"Converge3", " ", "MassT1m"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound20", " ", 
+                SuperscriptBox["MassT1m", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassT1m", "3"], " ", 
+                SuperscriptBox["mtop", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v2", "2"]}]]}], ")"}]}], "Factor16"], "+", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "Log2"}], ")"}], " ", "MassT1p", " ", 
+            RowBox[{"(", 
+             RowBox[{"Converge4", "-", 
+              FractionBox[
+               RowBox[{"Converge3", " ", "MassT1p"}], "2"], "-", 
+              FractionBox[
+               RowBox[{"Compound20", " ", 
+                SuperscriptBox["MassT1p", "2"]}], "4"], "+", 
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["MassT1p", "3"], " ", 
+                SuperscriptBox["mtop", "2"]}], 
+               RowBox[{"4", " ", 
+                SuperscriptBox["v2", "2"]}]]}], ")"}]}], "Factor19"], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "LogMT"}], ")"}], " ", 
+           SuperscriptBox["mtop", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["mtop", "2"], 
+              SuperscriptBox["v2", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SuperscriptBox["mtop", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", 
+                  SuperscriptBox["mbottom", "2"]}], "-", 
+                 SuperscriptBox["mtop", "2"]}], ")"}]}], 
+              RowBox[{"deltaMtb", " ", 
+               SuperscriptBox["v2", "2"]}]]}], ")"}]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "LogMB"}], ")"}], " ", 
+           SuperscriptBox["mbottom", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["mtop", "2"], 
+              SuperscriptBox["v2", "2"]], "+", 
+             FractionBox[
+              RowBox[{
+               SuperscriptBox["mtop", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", 
+                  SuperscriptBox["mbottom", "2"]}], "-", 
+                 SuperscriptBox["mtop", "2"]}], ")"}]}], 
+              RowBox[{"deltaMtb", " ", 
+               SuperscriptBox["v2", "2"]}]]}], ")"}]}]}], ")"}]}]}], "+", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["g2", "2"], " ", 
+        SuperscriptBox["v2", "2"]}], "2"], "+", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g2", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          SuperscriptBox["v1", "2"], "2"], "-", 
+         FractionBox[
+          SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "+", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       SuperscriptBox["g1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           SuperscriptBox["v1", "2"], "2"]}], "+", 
+         FractionBox[
+          SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["kappa0", "2"], " ", 
+       SuperscriptBox["vevS", "2"]}], "+", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"64", " ", "v2"}]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "16"}], " ", 
+          SuperscriptBox["g1", "2"], " ", "v2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["v1", "2"]}], "+", 
+            SuperscriptBox["v2", "2"]}], ")"}]}], "-", 
+         RowBox[{"16", " ", 
+          SuperscriptBox["g2", "2"], " ", "v2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["v1", "2"]}], "+", 
+            SuperscriptBox["v2", "2"]}], ")"}]}], "+", 
+         RowBox[{"64", " ", "A0", " ", "v1", " ", "vevS"}], "-", 
+         RowBox[{"64", " ", 
+          SuperscriptBox["kappa0", "2"], " ", "v2", " ", 
+          SuperscriptBox["vevS", "2"]}], "-", 
+         RowBox[{
+          FractionBox["1", 
+           RowBox[{"4", " ", 
+            SuperscriptBox["\[Pi]", "2"]}]], 
+          RowBox[{"3", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Factor5", " ", "MassT1m"}], "+", 
+             RowBox[{"2", " ", "Factor5", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", 
+                 FractionBox["3", "2"]}], "+", "Log1"}], ")"}], " ", 
+              "MassT1m"}], "+", 
+             RowBox[{"Factor6", " ", "MassT1p"}], "+", 
+             RowBox[{"2", " ", "Factor6", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", 
+                 FractionBox["3", "2"]}], "+", "Log2"}], ")"}], " ", 
+              "MassT1p"}], "-", 
+             FractionBox[
+              RowBox[{"16", " ", 
+               SuperscriptBox["mtop", "4"]}], "v2"], "-", 
+             FractionBox[
+              RowBox[{"16", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "LogMT"}]}], ")"}], " ", 
+               SuperscriptBox["mtop", "4"]}], "v2"], "+", 
+             FractionBox[
+              RowBox[{
+              "4", " ", "Factor8", " ", "kappa0", " ", "MassB2m", " ", 
+               "mbottom", " ", "vevS"}], 
+              RowBox[{"Sroot2", " ", "v1"}]], "+", 
+             FractionBox[
+              RowBox[{"4", " ", "Factor8", " ", "kappa0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "Log3"}]}], ")"}], " ", "MassB2m", " ", 
+               "mbottom", " ", "vevS"}], 
+              RowBox[{"Sroot2", " ", "v1"}]], "-", 
+             FractionBox[
+              RowBox[{
+              "4", " ", "Factor8", " ", "kappa0", " ", "MassB2p", " ", 
+               "mbottom", " ", "vevS"}], 
+              RowBox[{"Sroot2", " ", "v1"}]], "-", 
+             FractionBox[
+              RowBox[{"4", " ", "Factor8", " ", "kappa0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", 
+                 RowBox[{"2", " ", "Log4"}]}], ")"}], " ", "MassB2p", " ", 
+               "mbottom", " ", "vevS"}], 
+              RowBox[{"Sroot2", " ", "v1"}]]}], ")"}]}]}], "-", 
+         RowBox[{"64", " ", "kappa0", " ", "v1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"kappa0", " ", "v1", " ", "v2"}], "-", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["vevS", "2"]}]}], ")"}]}]}], ")"}]}]}]}], "}"}]}],
+   "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"\"\<\>\"", ">>", 
+  "\"\</home/ruppell/test2.txt\>\""}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "<", "4"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "1"}], ",", 
+     RowBox[{"j", "<", "4"}], ",", 
+     RowBox[{"j", "++"}], ",", 
+     RowBox[{
+      RowBox[{"\"\<mNeEv\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", 
+       RowBox[{"ToString", "[", "j", "]"}], "<>", "\"\< = \>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"mNeutEven", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j"}], "]"}], "]"}], "//.", "Reps"}], ",", 
+         "FortranForm"}], "]"}]}], ">>>", 
+      "\"\</home/ruppell/test2.txt\>\""}]}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "<", "4"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "1"}], ",", 
+     RowBox[{"j", "<", "4"}], ",", 
+     RowBox[{"j", "++"}], ",", 
+     RowBox[{
+      RowBox[{"\"\<mNeOd\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", 
+       RowBox[{"ToString", "[", "j", "]"}], "<>", "\"\< = \>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"mNeutOdd", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j"}], "]"}], "]"}], "//.", "Reps"}], ",", 
+         "FortranForm"}], "]"}]}], ">>>", 
+      "\"\</home/ruppell/test2.txt\>\""}]}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "<", "3"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"j", "=", "1"}], ",", 
+     RowBox[{"j", "<", "3"}], ",", 
+     RowBox[{"j", "++"}], ",", 
+     RowBox[{
+      RowBox[{"\"\<mCh\>\"", "<>", 
+       RowBox[{"ToString", "[", "i", "]"}], "<>", 
+       RowBox[{"ToString", "[", "j", "]"}], "<>", "\"\< = \>\"", "<>", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"mChar", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j"}], "]"}], "]"}], "//.", "Reps"}], ",", 
+         "FortranForm"}], "]"}]}], ">>>", 
+      "\"\</home/ruppell/test2.txt\>\""}]}], "]"}]}], "]"}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "1.11604500914344611478521381796847074559538449865111418550374658157634820\
+415304284997`50.*^25", ",", 
+     RowBox[{
+     "-", "1.11576380113681851744106125802295469502971602100421076518889841590\
+44953960799669197`50.*^24"}], ",", 
+     RowBox[{
+     "-", "2.08314856715025182577559409488164403983087926988098915595216770233\
+913268125684979`50.*^23"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "-", "1.11576380113681851744106125802295469502971602100421076518889841590\
+48963091668719033`50.*^24"}], ",", 
+     "1.2810819219858623880749982326644474936276628854825828626081235878365884\
+80822214389`50.*^23", ",", 
+     "3.4087716640735277663874378173102447721887870422075111986497915563631976\
+5161442773`50.*^22"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "-", "2.08314856715025182577559409488164403983087926988098915595216770250\
+1547062501214369`50.*^23"}], ",", 
+     "3.4087716640735277663874378173102447721887870422075111986497915575315250\
+7720695026`50.*^22", ",", 
+     "6.2985742135738817900457953257294861747257712620522097105140634567901485\
+3304429807`50.*^22"}], "}"}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"M\[Nu]", "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"\[Sigma]\[Nu]", "[", "_", "]"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", " ", "kappa12"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", " ", "kappa13"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa12", " ", "kappa13"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa12", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa13", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa13", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{"ML12", "\[Rule]", "0"}], ",", 
+     RowBox[{"ML13", "\[Rule]", "0"}], ",", 
+     RowBox[{"ML23", "\[Rule]", "0"}]}], "}"}]}], "//", 
+  "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa11", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML11", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", "0", 
+      
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A11", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {"0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa12", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML22", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A12", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {"0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa13", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML33", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A13", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa11", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa12", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa13", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A2", " ", "\[Sigma]S"}], "+", 
+         RowBox[{"kappa2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A11", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A12", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A13", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["MN33", "2"], "+", 
+         RowBox[{
+          SuperscriptBox["kappa2", "2"], " ", 
+          SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}]},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML11", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", "0", 
+      
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A11", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa11", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}]},
+     {"0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML22", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A12", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa12", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}]},
+     {"0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["ML33", "2"], "+", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A13", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa13", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}]},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A11", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A12", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A13", " ", "v2"}], "-", 
+         RowBox[{"kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["MN33", "2"], "+", 
+         RowBox[{
+          SuperscriptBox["kappa2", "2"], " ", 
+          SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa11", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa12", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", "kappa13", " ", "kappa2", " ", "v2", " ", 
+       "\[Sigma]S"}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"A2", " ", "\[Sigma]S"}], "+", 
+         RowBox[{"kappa2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}]}], ")"}]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MslepN", "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"\[Sigma]\[Nu]", "[", "_", "]"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Sigma]n", "[", "3", "]"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", " ", "kappa12"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", " ", "kappa13"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa12", " ", "kappa13"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa11", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa12", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"kappa13", "^", "2"}], "\[Rule]", "0"}], ",", 
+     RowBox[{"ML12", "\[Rule]", "0"}], ",", 
+     RowBox[{"ML13", "\[Rule]", "0"}], ",", 
+     RowBox[{"ML23", "\[Rule]", "0"}]}], "}"}]}], "//", 
+  "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML11", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", "0", 
+      
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A11", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa11", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", "0"},
+     {"0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML22", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A12", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa12", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", "0"},
+     {"0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML33", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A13", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa13", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], "0", "0", "0", "0"},
+     {
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A11", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa11", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A12", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa12", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A13", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}], 
+         "+", 
+         RowBox[{
+         "2", " ", "kappa13", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["MN33", "2"]}], "+", 
+         RowBox[{"2", " ", "A2", " ", "\[Sigma]S"}], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["kappa2", "2"], " ", 
+          SuperscriptBox["\[Sigma]S", "2"]}], "+", 
+         RowBox[{"2", " ", "kappa2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}]}], ")"}]}], "0", 
+      "0", "0", "0"},
+     {"0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML11", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", "0", 
+      
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A11", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa11", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {"0", "0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML22", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A12", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa12", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {"0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["ML33", "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["g2", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox["v1", "2"], "2"], "-", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}], "-", 
+         RowBox[{
+          SuperscriptBox["g1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox[
+              SuperscriptBox["v1", "2"], "2"]}], "+", 
+            FractionBox[
+             SuperscriptBox["v2", "2"], "2"]}], ")"}]}]}], ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A13", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa13", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}]},
+     {"0", "0", "0", "0", 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A11", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa11", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa11", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A12", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa12", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa12", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", "A13", " ", "v2"}], "-", 
+         RowBox[{
+         "2", " ", "kappa0", " ", "kappa13", " ", "v1", " ", "\[Sigma]S"}], 
+         "-", 
+         RowBox[{
+         "2", " ", "kappa13", " ", "kappa2", " ", "v2", " ", "\[Sigma]S"}]}], 
+        ")"}]}], 
+      RowBox[{
+       FractionBox["1", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          SuperscriptBox["MN33", "2"]}], "-", 
+         RowBox[{"2", " ", "A2", " ", "\[Sigma]S"}], "+", 
+         RowBox[{"2", " ", 
+          SuperscriptBox["kappa2", "2"], " ", 
+          SuperscriptBox["\[Sigma]S", "2"]}], "-", 
+         RowBox[{"2", " ", "kappa2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "kappa0"}], " ", "v1", " ", "v2"}], "+", 
+            RowBox[{"kappa3", " ", 
+             SuperscriptBox["\[Sigma]S", "2"]}]}], ")"}]}]}], ")"}]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"mNeutEven", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ",", "1"}], "]"}], "]"}]], "Input"]
+},
+Evaluator->"Kernel2",
+WindowSize->{1584, 1129},
+WindowMargins->{{Automatic, -9}, {Automatic, 0}},
+FrontEndVersion->"6.0 for Linux x86 (64-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 3463, 108, 165, "Input"],
+Cell[4034, 131, 949, 27, 77, "Input"],
+Cell[4986, 160, 125454, 3554, 9143, "Input"],
+Cell[130443, 3716, 270, 8, 32, "Input"],
+Cell[130716, 3726, 2694, 81, 77, "Input"],
+Cell[CellGroupData[{
+Cell[133435, 3811, 58, 1, 32, "Input"],
+Cell[133496, 3814, 23384, 622, 853, "Output"]
+}, Open  ]],
+Cell[156895, 4439, 2428, 70, 99, "Input"],
+Cell[CellGroupData[{
+Cell[159348, 4513, 1209, 17, 1111, "Input"],
+Cell[160560, 4532, 1225, 30, 78, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[161822, 4567, 966, 26, 55, "Input"],
+Cell[162791, 4595, 10943, 329, 230, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[173771, 4929, 891, 24, 55, "Input"],
+Cell[174665, 4955, 10958, 330, 230, "Output"]
+}, Open  ]],
+Cell[185638, 5288, 109, 3, 32, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

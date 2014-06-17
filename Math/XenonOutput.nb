@@ -1,0 +1,203 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7933,        194]
+NotebookOptionsPosition[      7637,        179]
+NotebookOutlinePosition[      7995,        195]
+CellTagsIndexPosition[      7952,        192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"file1", "=", 
+   RowBox[{
+   "<<", "\"\</Users/ruppell/Math/temp/output-cpx-higgs-phase-edm_clean.txt\>\
+\""}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"label1", "=", "\"\<Fig CPV\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.543818638257289*^9, 3.5438186413644342`*^9}, {
+  3.5441708550476*^9, 3.544170856805416*^9}, {3.5443373340626802`*^9, 
+  3.5443373355344353`*^9}, {3.544504684228504*^9, 3.5445046850974817`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Block", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "mLSP", ",", "dm", ",", "sigma", ",", "LSPid", ",", "xeZ", ",", "xeA", 
+     ",", "assign", ",", "\[Sigma]", ",", "\[Sigma]p", ",", "\[Sigma]n", ",", 
+     "mSnu", ",", "mChi", ",", "num", ",", "file", ",", "out"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"xeZ", "=", "54"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"xeA", "=", "131"}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\[Sigma]n", "[", "name_", "]"}], ":=", 
+     RowBox[{"name", "[", 
+      RowBox[{"[", 
+       RowBox[{";;", ",", "8", ",", "3", ",", "1"}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\[Sigma]p", "[", "name_", "]"}], ":=", 
+     RowBox[{"name", "[", 
+      RowBox[{"[", 
+       RowBox[{";;", ",", "8", ",", "4", ",", "1"}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"mSnu", "[", "name_", "]"}], ":=", 
+     RowBox[{"name", "[", 
+      RowBox[{"[", 
+       RowBox[{";;", ",", "3", ",", "5", ",", "1"}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"mChi", "[", "name_", "]"}], ":=", 
+     RowBox[{"Abs", "@", 
+      RowBox[{"name", "[", 
+       RowBox[{"[", 
+        RowBox[{";;", ",", "3", ",", "1", ",", "1"}], "]"}], "]"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"assign", "[", "name_", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"mLSP", ",", "sigma", ",", "LSPid", ",", "dm"}], "}"}], "=", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Min", "/@", 
+          RowBox[{"Transpose", "@", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"mSnu", "@", "name"}], ",", 
+             RowBox[{"mChi", "@", "name"}]}], "}"}]}]}], ")"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"10", "^", 
+          RowBox[{"-", "36"}]}], 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"xeZ", " ", 
+              RowBox[{"Sqrt", "@", 
+               RowBox[{"\[Sigma]p", "@", "name"}]}]}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"xeA", "-", "xeZ"}], ")"}], 
+              RowBox[{"Sqrt", "@", 
+               RowBox[{"\[Sigma]n", "@", "name"}]}]}]}], ")"}], "^", "2"}], 
+          "/", 
+          RowBox[{"xeA", "^", "2"}]}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"#1", "==", "\"\<~o1\>\""}], ",", "1", ",", "2"}], "]"}], 
+          "&"}], "/@", 
+         RowBox[{"name", "[", 
+          RowBox[{"[", 
+           RowBox[{";;", ",", "6", ",", "2"}], "]"}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"name", "[", 
+         RowBox[{"[", 
+          RowBox[{";;", ",", "6", ",", "1"}], "]"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+    "file", " ", "=", " ", "\"\</Users/ruppell/Math/temp/Xenon.mc\>\""}], ";",
+     "\[IndentingNewLine]", 
+    RowBox[{"out", "=", 
+     RowBox[{"OpenWrite", "[", "file", "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Write", "[", 
+     RowBox[{"out", ",", 
+      RowBox[{"OutputForm", "[", "\"\<<* assign@file1; *>\>\"", "]"}]}], 
+     "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Write", "[", 
+        RowBox[{"out", ",", 
+         RowBox[{"OutputForm", "[", 
+          RowBox[{"\"\<<* mLSP[[\>\"", "<>", 
+           RowBox[{"ToString", "@", "num"}], "<>", "\"\<]] *> <* sigma[[\>\"",
+            "<>", 
+           RowBox[{"ToString", "@", "num"}], "<>", "\"\<]] *> <* LSPid[[\>\"",
+            "<>", 
+           RowBox[{"ToString", "@", "num"}], "<>", "\"\<]] *> <* dm[[\>\"", "<>", 
+           RowBox[{"ToString", "@", "num"}], "<>", "\"\<]] *>\>\""}], "]"}]}],
+         "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"num", ",", "1", ",", 
+         RowBox[{"First", "@", 
+          RowBox[{"Dimensions", "@", "file1"}]}]}], "}"}]}], 
+      "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Close", "[", "file", "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Splice", "[", 
+     RowBox[{"file", ",", 
+      RowBox[{"PageWidth", "\[Rule]", "Infinity"}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"DeleteFile", "[", "file", "]"}], ";"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.54212035598453*^9, 3.542120401138538*^9}, {
+   3.542120456724742*^9, 3.542120462100259*^9}, {3.5421204922266808`*^9, 
+   3.542120537167557*^9}, {3.5421205749983892`*^9, 3.542120635619752*^9}, {
+   3.5421206669566507`*^9, 3.542120692473558*^9}, {3.542120747167708*^9, 
+   3.54212088312913*^9}, {3.542121351106724*^9, 3.5421213853029127`*^9}, {
+   3.542121456399225*^9, 3.542122130429553*^9}, {3.542122211307847*^9, 
+   3.5421223257326813`*^9}, {3.5421223632841063`*^9, 3.542122525827976*^9}, 
+   3.54212260561397*^9, {3.542122715407258*^9, 3.542122721820579*^9}, {
+   3.5421228839424667`*^9, 3.542123021682416*^9}, {3.542123079848991*^9, 
+   3.542123137166881*^9}, {3.542123245911826*^9, 3.5421233180559587`*^9}, {
+   3.5421233697924*^9, 3.542123525751787*^9}, {3.542123566560617*^9, 
+   3.542123665465757*^9}, {3.5421237086741457`*^9, 3.5421243330403357`*^9}, {
+   3.5421243821125393`*^9, 3.542124446577168*^9}, {3.542124643849886*^9, 
+   3.5421247095586033`*^9}, {3.5421247659074574`*^9, 3.542124782841889*^9}, {
+   3.54218086702325*^9, 3.5421811236062183`*^9}, 3.5421823643290462`*^9, {
+   3.542198390506504*^9, 3.542198401032673*^9}, {3.542198591381501*^9, 
+   3.542198593428171*^9}, {3.5421986653843117`*^9, 3.542198674896661*^9}, {
+   3.5421987484537773`*^9, 3.542198795576159*^9}, {3.542198900169807*^9, 
+   3.542198911936314*^9}, {3.542211843801161*^9, 3.542211853364595*^9}, 
+   3.54221482132265*^9, {3.5422148833337393`*^9, 3.542214894499135*^9}, {
+   3.542216944551303*^9, 3.542216949210627*^9}, {3.542265661659718*^9, 
+   3.5422657004603987`*^9}, {3.544505849755226*^9, 3.5445059719764347`*^9}, {
+   3.5445066168022833`*^9, 3.5445066385272617`*^9}, {3.544506672353269*^9, 
+   3.544506690123992*^9}, {3.54450680668967*^9, 3.544506982676112*^9}, {
+   3.544507453803297*^9, 3.544507726088711*^9}, {3.544507783409425*^9, 
+   3.544508028631019*^9}, {3.544508141315033*^9, 3.54450821379531*^9}, 
+   3.544508278614472*^9, {3.544509554135209*^9, 3.544509571355631*^9}, {
+   3.5445097136271763`*^9, 3.544509733615959*^9}}]
+},
+WindowSize->{1433, 910},
+WindowMargins->{{Automatic, 36}, {Automatic, 90}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 23, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 470, 10, 43, "Input"],
+Cell[1030, 32, 6603, 145, 373, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
